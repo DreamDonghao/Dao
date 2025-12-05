@@ -1,0 +1,35 @@
+//
+// Created by donghao on 25-11-28.
+//
+#ifndef MAPPED_REGION_HPP
+#define MAPPED_REGION_HPP
+#include <bounding_box.hpp>
+#include <tuple>
+
+namespace name_ {
+    /// @brief 映射区域
+    /// @details 一个边界框（左上右下边界坐标）到另一个边界框（左上右下边界坐标）的映射
+    class MappedRegion {
+    public:
+        MappedRegion() = default;
+
+        MappedRegion(const BoundingBox &boundingBoxA, const BoundingBox &boundingBoxB)
+            : m_boundingBoxA(boundingBoxA), m_boundingBoxB(boundingBoxB) {
+        }
+
+        MappedRegion(const float leftA, const float upA, const float rightA, const float downA,
+                     const float leftB, const float upB, const float rightB, const float downB)
+            : m_boundingBoxA(leftA, upA, rightA, downA),
+              m_boundingBoxB(leftB, upB, rightB, downB) {
+        }
+
+        [[nodiscard]] std::tuple<BoundingBox, BoundingBox> getBoundingBoxs() const {
+            return {m_boundingBoxA, m_boundingBoxB};
+        }
+
+    private:
+        BoundingBox m_boundingBoxA{0.f, 0.f, 0.f, 0.f};
+        BoundingBox m_boundingBoxB{0.f, 0.f, 0.f, 0.f};
+    };
+}
+#endif //MAPPED_REGION_HPP

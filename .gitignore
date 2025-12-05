@@ -1,0 +1,9 @@
+/.idea
+/cmake-build-debug
+/cmake-build-release
+/out
+/.vs
+/.idea/codeStyles
+/tool/data
+/tool/.idea
+/inc
