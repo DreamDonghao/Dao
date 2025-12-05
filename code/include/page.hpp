@@ -6,17 +6,22 @@
 #include <atlas_vertex_batch_builder.hpp>
 
 namespace dao {
+    /// @brief 页面
+    /// @details 提供了所有页面的接口，所有页面都应继承这个类
     class Page {
     public:
+        [[nodiscard]] virtual std::vector<TextureEnum> registerTexture() const = 0;
+
+        /// @brief 更新
         virtual void update() = 0;
-
-        [[nodiscard]] virtual const std::vector<AtlasDrawBatch> &getDrawBatches() const = 0;
-
-        [[nodiscard]] virtual  std::vector<TextureEnum> registerTexture() const = 0;
 
         virtual ~Page() = default;
 
         explicit Page(std::string title): m_title(std::move(title)) {
+        }
+
+        [[nodiscard]] auto getDrawBatches() const {
+            return m_atlasVertexBatchBuilder.getDrawBatches();
         }
 
         [[nodiscard]] const std::string &getTitle() const {
@@ -24,7 +29,8 @@ namespace dao {
         }
 
     protected:
-        std::string m_title;
+        std::string m_title; ///< 标题
+        AtlasVertexBatchBuilder m_atlasVertexBatchBuilder;
     };
 }
 #endif //PAGE_HPP

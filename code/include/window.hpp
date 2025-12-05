@@ -3,11 +3,13 @@
 //
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
+#include <array>
 #include <iostream>
 #include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
-#include <entt/entt.hpp>
 #include <page.hpp>
+#include <unordered_map>
+#include <memory>
 
 namespace dao {
     class Window {
@@ -92,7 +94,6 @@ namespace dao {
         };
 
         std::unordered_map<uint32_t, SDL_Texture *> atlasTextures;
-        AtlasVertexBatchBuilder m_atlasVertexBatchBuilder;
         std::string m_nowPageTitle;
         std::unordered_map<std::string, std::unique_ptr<Page> > m_pages;
     };

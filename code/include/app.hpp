@@ -4,9 +4,9 @@
 #ifndef APP_HPP
 #define APP_HPP
 #include <window.hpp>
-
+#include <ranges>
 namespace dao {
-    /// @brief 管理一个应用程序
+    /// @brief 应用
     /// @details 用来管理整个应用程序
     ///
     class App final {

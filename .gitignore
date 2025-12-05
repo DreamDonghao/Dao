@@ -1,8 +1,8 @@
 /.idea
-/cmake-build-debug
-/cmake-build-release
+/cmake-build*
 /out
 /.vs
 /.idea/codeStyles
 /tool/.idea
 /inc
+/doxygen

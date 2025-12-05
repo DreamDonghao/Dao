@@ -4,8 +4,10 @@
 #ifndef TEXTURE_BATCH_BUILDER_HPP
 #define TEXTURE_BATCH_BUILDER_HPP
 #include <SDL3/SDL_render.h>
-#include "texture_data.hpp"
+#include "atlas_texture.hpp"
+#include "atlas_region_data.hpp"
 #include <vector>
+
 namespace dao {
     /// @brief 纹理图集绘制批
     /// @details 一次纹理图集绘制用到的数据
@@ -25,12 +27,13 @@ namespace dao {
         AtlasVertexBatchBuilder(const AtlasVertexBatchBuilder &) = delete;
 
         /// @brief 将一个纹理加入批处理
-        void addToBatch(const TextureData &texture) {
+        void addToBatch(const AtlasTexture &texture) {
             const AtlasRegion atlasRegion = getAtlasRegion(texture.getName());
-
             if (const uint32_t atlasId = atlasRegion.atlasId;
                 m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId) {
                 m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>());
+                constexpr size_t a = 256;
+                m_drawBatches.back().vertices.reserve(a * 4);
             }
             appendQuadVertices(
                 m_drawBatches.back().vertices, m_drawBatches.back().indices,

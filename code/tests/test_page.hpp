@@ -7,9 +7,9 @@
 
 namespace dao {
     class TestPage final : public Page {
-        AtlasVertexBatchBuilder m_atlasVertexBatchBuilder;
-        TextureData appleImg{TextureEnum::food_apple, 0, 0, 100, 100};
-        TextureData bananaImg{TextureEnum::food_banana, 100, 0, 200, 100};
+
+        AtlasTexture appleImg{TextureEnum::food_apple, 0, 0, 100, 100};
+        AtlasTexture bananaImg{TextureEnum::food_banana, 100, 0, 200, 100};
 
     public:
         explicit TestPage(std::string title): Page(std::move(title)) {
@@ -25,7 +25,7 @@ namespace dao {
 
         void update() override {
             m_atlasVertexBatchBuilder.clearDrawBatches();
-            for (int i = 0; i < 30; ++i) {
+            for (int i = 0; i < 300; ++i) {
                 for (int j = 0; j < 200; ++j) {
                     m_atlasVertexBatchBuilder.addToBatch(appleImg);
                 }
@@ -35,9 +35,7 @@ namespace dao {
             }
         }
 
-        [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const override {
-            return m_atlasVertexBatchBuilder.getDrawBatches();
-        }
+
 
     private:
     };

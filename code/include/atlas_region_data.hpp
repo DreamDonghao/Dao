@@ -1,6 +1,5 @@
 #ifndef ATLAS_REGION_DATA_HPP
 #define ATLAS_REGION_DATA_HPP
-#include "atlas_region_data.hpp"
 #include <iterator>
 
 namespace dao {

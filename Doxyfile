@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Project metadata
+#-----------------------------------------------------------
+PROJECT_NAME           = "DaoUI"
+PROJECT_BRIEF          = "A cross-platform C++ framework"
+PROJECT_NUMBER         = 0.1.0
+OUTPUT_DIRECTORY       = doxygen
+
+#-----------------------------------------------------------
+# What to scan
+#-----------------------------------------------------------
+INPUT                  = code
+FILE_PATTERNS          = *.h *.hpp *.cpp
+RECURSIVE              = YES
+
+# 可以排除第三方库（如果你不想它们出现在文档里）
+EXCLUDE                = thirdparty external
+
+#-----------------------------------------------------------
+# Build options
+#-----------------------------------------------------------
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+
+#-----------------------------------------------------------
+# Diagrams (Graphviz)
+#-----------------------------------------------------------
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 4
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+UML_LOOK               = YES
+
+#-----------------------------------------------------------
+# Documentation extraction
+#-----------------------------------------------------------
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = NO
+
+#-----------------------------------------------------------
+# Source browsing
+#-----------------------------------------------------------
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+
+#-----------------------------------------------------------
+# Warnings
+#-----------------------------------------------------------
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+
+#-----------------------------------------------------------
+# HTML config
+#-----------------------------------------------------------
+HTML_TIMESTAMP         = NO
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
