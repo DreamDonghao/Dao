@@ -1,24 +1,24 @@
-[中文](./docs/README.ch-ZN.md)
+[English](../README.md)
 
 # Dao
 
-This is a cross platform C++GUI program development framework that can be used to develop GUI programs and applications such as games.
+这是一个跨平台 C++ GUI 程序通用开发框架，可用于开发 GUI 程序以及游戏等应用。
 
-## Use
+## 使用
 
-Due to the project being in its early stages, the library files and framework system are being refined
+由于该项目处于初级阶段，库文件和框架系统正在完善
 
-### Environmental requirements
+### 环境要求
 
-The following is a tested and constructible version, other versions can be tried on their own
+一下是经过测试可构建的版本，其他版本可自行尝试
 
 - C++ 23
 - Cmake 3.31
-- Vcpkg: [sdl3 3.2.26] [sdl3-image 3.2.4 (png)] For specific content of third-party libraries, please refer to the vcpkg.json file
+- vcpkg :[sdl3 3.2.26] [sdl3-image 3.2.4(png)] 第三方库具体内容可参考 vcpkg.json 文件 
 
-### Get started quickly
+### 快速上手
 
-You can directly edit the contents of **main.cpp** and **test\u page.hpp** in the project to quickly familiarize yourself with how to use
+您可直接编辑项目中 **main.cpp** 与 **test_page.hpp** 中的内容来快速熟悉如何使用
 
 ```C++
 /// code/main.cpp
@@ -26,16 +26,15 @@ You can directly edit the contents of **main.cpp** and **test\u page.hpp** in th
 #include <test_page.hpp>
 
 int main(int argc, char *argv[]) {
-    ///Create an app
+    /// 创建一个应用
     auto &app = dao::App::getApp();
-    ///Create a window and add a page
+    /// 创建一个窗口并添加一个页面
     app.createWindow(800, 600)
             .addPage(std::make_unique<dao::TestPage>("test1"));
-    ///Start up procedure
+	/// 启动程序
     app.run();
     return 0;
 }
-
 ```
 
 ```c++
@@ -46,18 +45,17 @@ int main(int argc, char *argv[]) {
 
 namespace dao {
     class TestPage final : public Page {
-        ///Texture atlas batch vertex array builder
+        /// 纹理图集批处理顶点数组构建器
         AtlasVertexBatchBuilder m_atlasVertexBatchBuilder;
-        ///An apple picture
+        /// 一个苹果图片
         TextureData appleImg{TextureEnum::food_apple, 0, 0, 100, 100};
-        ///A banana picture
+        /// 一个香蕉图片
         TextureData bananaImg{TextureEnum::food_banana, 100, 0, 200, 100};
-
     public:
         explicit TestPage(std::string title): Page(std::move(title)) {
         }
-
-        ///Submit the picture and load it into the video memory when creating the window
+		
+        /// 将图片提交出去在创建窗口的时候加载到显存
         [[nodiscard]] std::vector<TextureEnum> registerTexture() const override {
             std::vector registerTexture{
                 TextureEnum::food_apple,
@@ -65,8 +63,7 @@ namespace dao {
             };
             return registerTexture;
         }
-
-        ///Update logic per frame of window
+        /// 窗口每帧的更新逻辑
         void update() override {
             m_atlasVertexBatchBuilder.clearDrawBatches();
             for (int i = 0; i < 30; ++i) {
@@ -78,8 +75,7 @@ namespace dao {
                 }
             }
         }
-
-        ///Submit vertex array drawing
+		/// 提交顶点数组绘图
         [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const override {
             return m_atlasVertexBatchBuilder.getDrawBatches();
         }
@@ -89,3 +85,4 @@ namespace dao {
 #endif //TESTPAGE_HPP
 
 ```
+
