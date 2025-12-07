@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['participate_20in_20daoui_20development_0',['Participate in DaoUI Development',['../join.html',1,'']]]
+  ['3_20create_20a_20feature_20branch_0',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]]
 ];

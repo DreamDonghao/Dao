@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['use_0',['use',['../md_doxygen_2docs__md_2en_2use.html',1,'']]]
+  ['4_20write_20code_20and_20commit_0',['4. Write Code and Commit',['../join.html#autotoc_md8',1,'']]]
 ];
