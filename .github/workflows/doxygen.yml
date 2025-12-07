@@ -14,8 +14,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Doxygen and Graphviz
-        run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+      # Install Graphviz (dependency)
+      - name: Install Graphviz
+        run: sudo apt-get update && sudo apt-get install -y graphviz
+
+      # Download latest Doxygen release from GitHub
+      - name: Download latest Doxygen
+        run: |
+          DOXYGEN_URL=$(curl -s https://api.github.com/repos/doxygen/doxygen/releases/latest \
+            | grep "browser_download_url" \
+            | grep "linux.bin.tar.gz" \
+            | cut -d '"' -f 4)
+
+          echo "Latest Doxygen: $DOXYGEN_URL"
+          wget "$DOXYGEN_URL" -O doxygen.tar.gz
+          tar -xzf doxygen.tar.gz
+          sudo mv doxygen*/bin/doxygen /usr/local/bin/doxygen
+          doxygen --version
 
       - name: Create output directories
         run: mkdir -p doxygen_output/zh/html doxygen_output/en/html
