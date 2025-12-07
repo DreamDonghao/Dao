@@ -15,8 +15,8 @@ namespace dao {
         explicit TestPage(std::string title): Page(std::move(title)) {
         }
 
-        [[nodiscard]] eastl::vector<TextureEnum> registerTexture() const override {
-            eastl::vector registerTexture{
+        [[nodiscard]] std::vector<TextureEnum> registerTexture() const override {
+            std::vector registerTexture{
                 TextureEnum::food_apple,
                 TextureEnum::food_banana,
             };

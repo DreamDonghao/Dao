@@ -6,15 +6,14 @@
 #include <SDL3/SDL_render.h>
 #include "atlas_texture.hpp"
 #include "atlas_region_data.hpp"
-#include "EASTL/vector.h"
 #include <quad_index.hpp>
-
+#include <vector>
 namespace dao {
     /// @brief 纹理图集绘制批
     /// @details 一次纹理图集绘制用到的数据
     struct AtlasDrawBatch {
         uint32_t atlasId;                   ///< 绘制的纹理图集 ID
-        eastl::vector<SDL_Vertex> vertices; ///< 绘制纹理图集的顶点数组
+        std::vector<SDL_Vertex> vertices; ///< 绘制纹理图集的顶点数组
         const int *indices = nullptr;
     };
 
@@ -32,21 +31,21 @@ namespace dao {
         void addToBatch(const AtlasTexture &texture);
 
         /// @brief 添加绘制元素到批处理
-        void addToBatch(eastl::vector<SDL_Vertex> v);
+        void addToBatch(std::vector<SDL_Vertex> v);
 
         /// @brief 清理要绘制的纹理图集
         /// @details 一般要每帧调用，否则会堆积上一帧的内容
         void clearDrawBatches() { m_drawBatches.clear(); }
 
         /// @brief 获取将要绘制的所有内容的数据
-        [[nodiscard]] const eastl::vector<AtlasDrawBatch> &getDrawBatches() const { return m_drawBatches; }
+        [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const { return m_drawBatches; }
 
     private:
-        eastl::vector<AtlasDrawBatch> m_drawBatches; ///< 一组纹理图集绘制的数据
+        std::vector<AtlasDrawBatch> m_drawBatches; ///< 一组纹理图集绘制的数据
         static constexpr auto m_qudaIndices = make_indices<QuadCount>();
 
         /// @brief  添加纹理的数据到顶点数组
-        static void appendQuadVertices(eastl::vector<SDL_Vertex> &vertices,
+        static void appendQuadVertices(std::vector<SDL_Vertex> &vertices,
                                        const BoundingBox pos, const TextureEnum textureName) {
             const float winL = pos.getLeft();
             const float winT = pos.getTop();
@@ -69,7 +68,7 @@ namespace dao {
         const AtlasRegion atlasRegion = getAtlasRegion(texture.getName());
         if (const uint32_t atlasId = atlasRegion.atlasId;
             m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId) {
-            m_drawBatches.emplace_back(atlasId, eastl::vector<SDL_Vertex>());
+            m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>());
             m_drawBatches.back().indices = m_qudaIndices.data();
         }
         appendQuadVertices(
@@ -80,9 +79,9 @@ namespace dao {
 
 
     template<std::size_t QuadCount>
-    void AtlasVertexBatchBuilder<QuadCount>::addToBatch(eastl::vector<SDL_Vertex> v) {
+    void AtlasVertexBatchBuilder<QuadCount>::addToBatch(std::vector<SDL_Vertex> v) {
         if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
-            m_drawBatches.emplace_back(0, eastl::vector<SDL_Vertex>());
+            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>());
         }
         m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());
     }

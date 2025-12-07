@@ -1,0 +1,29 @@
+name: Build and Deploy Doxygen
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Doxygen and Graphviz
+        run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+
+      - name: Build Chinese docs
+        run: doxygen doxygen/Doxyfiles/Doxyfile.zh
+
+      - name: Build English docs
+        run: doxygen doxygen/Doxyfiles/Doxyfile.en
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: |
+            doxygen_output/zh/html
+            doxygen_output/en/html

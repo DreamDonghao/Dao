@@ -14,7 +14,7 @@ The following is a tested and constructible version, other versions can be tried
 
 - C++ 23
 - Cmake 3.31
-- Vcpkg: [sdl3 3.2.26] [sdl3-image 3.2.4 (png)] For specific content of third-party libraries, please refer to the vcpkg.json file
+- Vcpkg: `sdl3 3.2.26` `sdl3-image 3.2.4 [png]` For specific content of third-party libraries, please refer to the vcpkg.json file
 
 ### Get started quickly
 

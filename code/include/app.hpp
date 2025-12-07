@@ -13,6 +13,7 @@ namespace dao {
         ~App() = default;
 
         /// @brief 创建应用
+        /// @en
         /// @returns 一个应用实例
         [[nodiscard]] static App &getApp() {
             static App app{};

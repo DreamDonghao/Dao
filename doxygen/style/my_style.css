@@ -1,31 +1,13 @@
-/* SPDX-License-Identifier: MIT */
-/**
-
-Doxygen Awesome
-https://github.com/jothepro/doxygen-awesome-css
-
-Copyright (c) 2021 - 2025 jothepro
-
-*/
-
 html {
-    /* primary theme color. This will affect the entire websites color scheme: links, arrows, labels, ... */
     --primary-color: #1779c4;
     --primary-dark-color: #335c80;
     --primary-light-color: #70b1e9;
     --on-primary-color: #ffffff;
-
     --link-color: var(--primary-color);
-
-    /* page base colors */
     --page-background-color: #ffffff;
     --page-foreground-color: #2f4153;
     --page-secondary-foreground-color: #6f7e8e;
-
-    /* color for all separators on the website: hr, borders, ... */
     --separator-color: #dedede;
-
-    /* border radius for all rounded components. Will affect many components, like dropdowns, memitems, codeblocks, ... */
     --border-radius-large: 10px;
     --border-radius-small: 5px;
     --border-radius-medium: 8px;
@@ -1672,7 +1654,7 @@ h2.memtitle, div.memitem {
 }
 
 h2.memtitle {
-    box-shadow: 0px var(--spacing-medium) 0 -1px var(--fragment-background), var(--box-shadow);
+    box-shadow: 0px var(--spacing-medium) 0 1px var(--fragment-background), var(--box-shadow);
 }
 
 div.memitem {
@@ -2606,14 +2588,10 @@ div.memproto,
 .contents .center,
 .contents table:not(.memberdecls):not(.mlabels):not(.fieldtable):not(.memname) tbody,
 div.contents .toc {
-    overflow-x: auto;
-    overflow-x: overlay;
 }
 
 #nav-tree {
     overflow-x: auto;
-    overflow-y: auto;
-    overflow-y: overlay;
 }
 
 /*
