@@ -5,7 +5,7 @@ var searchData=
   ['getbottom_2',['getBottom',['../classdao_1_1BoundingBox.html#afb51de089652634ea4fa653c0aa86b61',1,'dao::BoundingBox']]],
   ['getboundingbox_3',['getBoundingBox',['../classdao_1_1AtlasTexture.html#ad30f8153128927abbc605d3a399e26aa',1,'dao::AtlasTexture']]],
   ['getboundingboxs_4',['getBoundingBoxs',['../classdao_1_1MappedRegion.html#a912fef3190777da9e2ba0b619de6ec7a',1,'dao::MappedRegion']]],
-  ['getdrawbatches_5',['getdrawbatches',['../classdao_1_1Page.html#a5a209b582f4607b53893a1c9080ae311',1,'dao::Page::getDrawBatches()'],['../classdao_1_1AtlasVertexBatchBuilder.html#aa2c484f945426c5eeb4ccc82f44b84f9',1,'dao::AtlasVertexBatchBuilder::getDrawBatches()']]],
+  ['getdrawbatches_5',['getDrawBatches',['../classdao_1_1Page.html#a5a209b582f4607b53893a1c9080ae311',1,'dao::Page::getDrawBatches()'],['../classdao_1_1AtlasVertexBatchBuilder.html#aa2c484f945426c5eeb4ccc82f44b84f9',1,'dao::AtlasVertexBatchBuilder::getDrawBatches()']]],
   ['getheight_6',['getHeight',['../classdao_1_1BoundingBox.html#a393e0f4d0a69bbdde4ff42b96c73c4bc',1,'dao::BoundingBox']]],
   ['getid_7',['getId',['../classdao_1_1Window.html#a46dbbcb2857f8b9d358125b200eadf44',1,'dao::Window']]],
   ['getleft_8',['getLeft',['../classdao_1_1BoundingBox.html#a8f6f24982522d31856add6116050a235',1,'dao::BoundingBox']]],

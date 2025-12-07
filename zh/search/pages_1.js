@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['使用_20daoui_20开发_0',['使用 DaoUI 开发',['../use.html',1,'']]]
+  ['2_20克隆仓库_0',['2. 克隆仓库',['../join.html#autotoc_md4',1,'']]]
 ];

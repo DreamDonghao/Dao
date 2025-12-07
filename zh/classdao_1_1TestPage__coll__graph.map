@@ -1,7 +1,7 @@
 <map id="dao::TestPage" name="dao::TestPage">
-<area shape="rect" id="Node000001" title=" " alt="" coords="39,463,176,568"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Page.html" title="页面" alt="" coords="35,248,180,413"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,427,110,462,105,462,105,427"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1AtlasVertexBatchBuilder.html" title=" " alt="" coords="5,5,209,185"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,186,110,232,105,232,105,186"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="39,431,176,536"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Page.html" title="页面" alt="" coords="35,216,180,381"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,395,110,430,105,430,105,395"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1AtlasVertexBatchBuilder.html" title=" " alt="" coords="5,5,209,145"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,146,110,199,105,199,105,146"/>
 </map>

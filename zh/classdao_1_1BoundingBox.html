@@ -3,16 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>DaoUI: dao::BoundingBox类 参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -35,21 +36,20 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.8 -->
+<!-- 制作者 Doxygen 1.15.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -64,10 +64,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('classdao_1_1BoundingBox.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('classdao_1_1BoundingBox.html','','classdao_1_1BoundingBox-members'); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -91,93 +90,70 @@ $(document).ready(function(){initNavTree('classdao_1_1BoundingBox.html',''); ini
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public 成员函数</a> &#124;
-<a href="classdao_1_1BoundingBox-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">dao::BoundingBox类 参考</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>边界框  
- <a href="classdao_1_1BoundingBox.html#details">更多...</a></p>
+ <a href="#details">更多...</a></p>
 
 <p><code>#include &lt;<a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>&gt;</code></p>
 <div class="dynheader">
 dao::BoundingBox 的协作图:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1BoundingBox__coll__graph.png" border="0" usemap="#adao_1_1BoundingBox_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="classdao_1_1BoundingBox__coll__graph.png" border="0" usemap="#adao_1_1BoundingBox_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1BoundingBox_coll__map" id="adao_1_1BoundingBox_coll__map">
 <area shape="rect" title="边界框" alt="" coords="5,5,148,271"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a93a90662a60c5440bff020c1b68acf54" id="r_a93a90662a60c5440bff020c1b68acf54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a93a90662a60c5440bff020c1b68acf54">BoundingBox</a> ()=default</td></tr>
-<tr class="separator:a93a90662a60c5440bff020c1b68acf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c8bca4b93e6e0974a574b5323198a1" id="r_ae6c8bca4b93e6e0974a574b5323198a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#ae6c8bca4b93e6e0974a574b5323198a1">BoundingBox</a> (const float left, const float up, const float right, const float down)</td></tr>
+<tr class="memitem:a93a90662a60c5440bff020c1b68acf54" id="r_a93a90662a60c5440bff020c1b68acf54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93a90662a60c5440bff020c1b68acf54">BoundingBox</a> ()=default</td></tr>
+<tr class="memitem:ae6c8bca4b93e6e0974a574b5323198a1" id="r_ae6c8bca4b93e6e0974a574b5323198a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6c8bca4b93e6e0974a574b5323198a1">BoundingBox</a> (const float left, const float up, const float right, const float down)</td></tr>
 <tr class="memdesc:ae6c8bca4b93e6e0974a574b5323198a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
-<tr class="separator:ae6c8bca4b93e6e0974a574b5323198a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e4b9d36fbc8fbe09805dc48b68e99fa" id="r_a6e4b9d36fbc8fbe09805dc48b68e99fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a6e4b9d36fbc8fbe09805dc48b68e99fa">~BoundingBox</a> ()=default</td></tr>
-<tr class="separator:a6e4b9d36fbc8fbe09805dc48b68e99fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07cd47e42be4a99d06248a43220a9b6" id="r_ac07cd47e42be4a99d06248a43220a9b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#ac07cd47e42be4a99d06248a43220a9b6">set</a> (const float left, const float up, const float right, const float down)</td></tr>
+<tr class="memitem:a6e4b9d36fbc8fbe09805dc48b68e99fa" id="r_a6e4b9d36fbc8fbe09805dc48b68e99fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e4b9d36fbc8fbe09805dc48b68e99fa">~BoundingBox</a> ()=default</td></tr>
+<tr class="memitem:ac07cd47e42be4a99d06248a43220a9b6" id="r_ac07cd47e42be4a99d06248a43220a9b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07cd47e42be4a99d06248a43220a9b6">set</a> (const float left, const float up, const float right, const float down)</td></tr>
 <tr class="memdesc:ac07cd47e42be4a99d06248a43220a9b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置数据  <br /></td></tr>
-<tr class="separator:ac07cd47e42be4a99d06248a43220a9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3b3eca55875d1be3ff884d84560b84b" id="r_af3b3eca55875d1be3ff884d84560b84b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#af3b3eca55875d1be3ff884d84560b84b">setLeft</a> (const float left)</td></tr>
+<tr class="memitem:af3b3eca55875d1be3ff884d84560b84b" id="r_af3b3eca55875d1be3ff884d84560b84b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3b3eca55875d1be3ff884d84560b84b">setLeft</a> (const float left)</td></tr>
 <tr class="memdesc:af3b3eca55875d1be3ff884d84560b84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置左边界坐标  <br /></td></tr>
-<tr class="separator:af3b3eca55875d1be3ff884d84560b84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaccf53cc548817536a25483c05f514a" id="r_acaccf53cc548817536a25483c05f514a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#acaccf53cc548817536a25483c05f514a">setUp</a> (const float up)</td></tr>
+<tr class="memitem:acaccf53cc548817536a25483c05f514a" id="r_acaccf53cc548817536a25483c05f514a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acaccf53cc548817536a25483c05f514a">setUp</a> (const float up)</td></tr>
 <tr class="memdesc:acaccf53cc548817536a25483c05f514a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置上边界坐标  <br /></td></tr>
-<tr class="separator:acaccf53cc548817536a25483c05f514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af21ff407d200dae6bf10683cf2338570" id="r_af21ff407d200dae6bf10683cf2338570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#af21ff407d200dae6bf10683cf2338570">setRight</a> (const float right)</td></tr>
+<tr class="memitem:af21ff407d200dae6bf10683cf2338570" id="r_af21ff407d200dae6bf10683cf2338570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af21ff407d200dae6bf10683cf2338570">setRight</a> (const float right)</td></tr>
 <tr class="memdesc:af21ff407d200dae6bf10683cf2338570"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置右边界坐标  <br /></td></tr>
-<tr class="separator:af21ff407d200dae6bf10683cf2338570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add5d58c61a90c33969fe50428902e46c" id="r_add5d58c61a90c33969fe50428902e46c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#add5d58c61a90c33969fe50428902e46c">setDown</a> (const float down)</td></tr>
+<tr class="memitem:add5d58c61a90c33969fe50428902e46c" id="r_add5d58c61a90c33969fe50428902e46c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add5d58c61a90c33969fe50428902e46c">setDown</a> (const float down)</td></tr>
 <tr class="memdesc:add5d58c61a90c33969fe50428902e46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置下边界坐标  <br /></td></tr>
-<tr class="separator:add5d58c61a90c33969fe50428902e46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e22a0ea0477d0d24052d731a88ba95a" id="r_a2e22a0ea0477d0d24052d731a88ba95a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a2e22a0ea0477d0d24052d731a88ba95a">moveHorizontal</a> (const float distance)</td></tr>
+<tr class="memitem:a2e22a0ea0477d0d24052d731a88ba95a" id="r_a2e22a0ea0477d0d24052d731a88ba95a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e22a0ea0477d0d24052d731a88ba95a">moveHorizontal</a> (const float distance)</td></tr>
 <tr class="memdesc:a2e22a0ea0477d0d24052d731a88ba95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">水平移动  <br /></td></tr>
-<tr class="separator:a2e22a0ea0477d0d24052d731a88ba95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a035b936c24d217ef39c9f80fd51106ce" id="r_a035b936c24d217ef39c9f80fd51106ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a035b936c24d217ef39c9f80fd51106ce">moveVertical</a> (const float distance)</td></tr>
+<tr class="memitem:a035b936c24d217ef39c9f80fd51106ce" id="r_a035b936c24d217ef39c9f80fd51106ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a035b936c24d217ef39c9f80fd51106ce">moveVertical</a> (const float distance)</td></tr>
 <tr class="memdesc:a035b936c24d217ef39c9f80fd51106ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">竖直移动  <br /></td></tr>
-<tr class="separator:a035b936c24d217ef39c9f80fd51106ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d7ef9eadc2c39d706136376acd0903" id="r_ae6d7ef9eadc2c39d706136376acd0903"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#ae6d7ef9eadc2c39d706136376acd0903">normalize</a> ()</td></tr>
+<tr class="memitem:ae6d7ef9eadc2c39d706136376acd0903" id="r_ae6d7ef9eadc2c39d706136376acd0903"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6d7ef9eadc2c39d706136376acd0903">normalize</a> ()</td></tr>
 <tr class="memdesc:ae6d7ef9eadc2c39d706136376acd0903"><td class="mdescLeft">&#160;</td><td class="mdescRight">正常化  <br /></td></tr>
-<tr class="separator:ae6d7ef9eadc2c39d706136376acd0903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ef8d8b5d59b6bc1c6403aff0d83bf1d" id="r_a8ef8d8b5d59b6bc1c6403aff0d83bf1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d">isValid</a> () const</td></tr>
+<tr class="memitem:a8ef8d8b5d59b6bc1c6403aff0d83bf1d" id="r_a8ef8d8b5d59b6bc1c6403aff0d83bf1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ef8d8b5d59b6bc1c6403aff0d83bf1d">isValid</a> () const</td></tr>
 <tr class="memdesc:a8ef8d8b5d59b6bc1c6403aff0d83bf1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查是否有效  <br /></td></tr>
-<tr class="separator:a8ef8d8b5d59b6bc1c6403aff0d83bf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0ea9cc1393c414988196618e3ec7ab" id="r_a1e0ea9cc1393c414988196618e3ec7ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a1e0ea9cc1393c414988196618e3ec7ab">isInBoundingBox</a> (const float x, const float y) const</td></tr>
+<tr class="memitem:a1e0ea9cc1393c414988196618e3ec7ab" id="r_a1e0ea9cc1393c414988196618e3ec7ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e0ea9cc1393c414988196618e3ec7ab">isInBoundingBox</a> (const float x, const float y) const</td></tr>
 <tr class="memdesc:a1e0ea9cc1393c414988196618e3ec7ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断点 (x,y) 是否在边界框内  <br /></td></tr>
-<tr class="separator:a1e0ea9cc1393c414988196618e3ec7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6cb445bcbf8004bb4990599b31383b" id="r_aab6cb445bcbf8004bb4990599b31383b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#aab6cb445bcbf8004bb4990599b31383b">isIntersects</a> (const <a class="el" href="classdao_1_1BoundingBox.html">BoundingBox</a> &amp;other) const</td></tr>
+<tr class="memitem:aab6cb445bcbf8004bb4990599b31383b" id="r_aab6cb445bcbf8004bb4990599b31383b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab6cb445bcbf8004bb4990599b31383b">isIntersects</a> (const <a class="el" href="#a93a90662a60c5440bff020c1b68acf54">BoundingBox</a> &amp;other) const</td></tr>
 <tr class="memdesc:aab6cb445bcbf8004bb4990599b31383b"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断两个边界框是否有重合部分  <br /></td></tr>
-<tr class="separator:aab6cb445bcbf8004bb4990599b31383b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f6f24982522d31856add6116050a235" id="r_a8f6f24982522d31856add6116050a235"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a8f6f24982522d31856add6116050a235">getLeft</a> () const</td></tr>
+<tr class="memitem:a8f6f24982522d31856add6116050a235" id="r_a8f6f24982522d31856add6116050a235"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f6f24982522d31856add6116050a235">getLeft</a> () const</td></tr>
 <tr class="memdesc:a8f6f24982522d31856add6116050a235"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取左边界坐标  <br /></td></tr>
-<tr class="separator:a8f6f24982522d31856add6116050a235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e63152e39dc0ae79ea8e4f40de73758" id="r_a1e63152e39dc0ae79ea8e4f40de73758"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a1e63152e39dc0ae79ea8e4f40de73758">getTop</a> () const</td></tr>
+<tr class="memitem:a1e63152e39dc0ae79ea8e4f40de73758" id="r_a1e63152e39dc0ae79ea8e4f40de73758"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e63152e39dc0ae79ea8e4f40de73758">getTop</a> () const</td></tr>
 <tr class="memdesc:a1e63152e39dc0ae79ea8e4f40de73758"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取上边界坐标  <br /></td></tr>
-<tr class="separator:a1e63152e39dc0ae79ea8e4f40de73758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f770793d720faef5b2bf5d0a212c65" id="r_ab3f770793d720faef5b2bf5d0a212c65"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#ab3f770793d720faef5b2bf5d0a212c65">getRight</a> () const</td></tr>
+<tr class="memitem:ab3f770793d720faef5b2bf5d0a212c65" id="r_ab3f770793d720faef5b2bf5d0a212c65"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3f770793d720faef5b2bf5d0a212c65">getRight</a> () const</td></tr>
 <tr class="memdesc:ab3f770793d720faef5b2bf5d0a212c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取右边界坐标  <br /></td></tr>
-<tr class="separator:ab3f770793d720faef5b2bf5d0a212c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb51de089652634ea4fa653c0aa86b61" id="r_afb51de089652634ea4fa653c0aa86b61"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#afb51de089652634ea4fa653c0aa86b61">getBottom</a> () const</td></tr>
+<tr class="memitem:afb51de089652634ea4fa653c0aa86b61" id="r_afb51de089652634ea4fa653c0aa86b61"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb51de089652634ea4fa653c0aa86b61">getBottom</a> () const</td></tr>
 <tr class="memdesc:afb51de089652634ea4fa653c0aa86b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取下边界坐标  <br /></td></tr>
-<tr class="separator:afb51de089652634ea4fa653c0aa86b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16f176a1257d31004c3b89d32f78b401" id="r_a16f176a1257d31004c3b89d32f78b401"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a16f176a1257d31004c3b89d32f78b401">getWidth</a> () const</td></tr>
+<tr class="memitem:a16f176a1257d31004c3b89d32f78b401" id="r_a16f176a1257d31004c3b89d32f78b401"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16f176a1257d31004c3b89d32f78b401">getWidth</a> () const</td></tr>
 <tr class="memdesc:a16f176a1257d31004c3b89d32f78b401"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取宽度  <br /></td></tr>
-<tr class="separator:a16f176a1257d31004c3b89d32f78b401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393e0f4d0a69bbdde4ff42b96c73c4bc" id="r_a393e0f4d0a69bbdde4ff42b96c73c4bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a393e0f4d0a69bbdde4ff42b96c73c4bc">getHeight</a> () const</td></tr>
+<tr class="memitem:a393e0f4d0a69bbdde4ff42b96c73c4bc" id="r_a393e0f4d0a69bbdde4ff42b96c73c4bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a393e0f4d0a69bbdde4ff42b96c73c4bc">getHeight</a> () const</td></tr>
 <tr class="memdesc:a393e0f4d0a69bbdde4ff42b96c73c4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取高度  <br /></td></tr>
-<tr class="separator:a393e0f4d0a69bbdde4ff42b96c73c4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>边界框 </p>
 <p>用来表示一个矩形范围区域左上右下边界的坐标 </p>
 
 <p class="definition">在文件 <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a> 第 <a class="el" href="bounding__box_8hpp_source.html#l00011">11</a> 行定义.</p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a93a90662a60c5440bff020c1b68acf54" name="a93a90662a60c5440bff020c1b68acf54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93a90662a60c5440bff020c1b68acf54">&#9670;&#160;</a></span>BoundingBox() <span class="overload">[1/2]</span></h2>
 
@@ -190,13 +166,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">dao::BoundingBox::BoundingBox </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -215,36 +191,27 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">dao::BoundingBox::BoundingBox </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>up</em>, </td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>up</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>right</em>, </td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>right</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>down</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>down</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -266,7 +233,7 @@ Public 成员函数</h2></td></tr>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1BoundingBox_ae6c8bca4b93e6e0974a574b5323198a1_icgraph.png" border="0" usemap="#aclassdao_1_1BoundingBox_ae6c8bca4b93e6e0974a574b5323198a1_icgraph" alt=""/></div>
+<div class="center"><img src="classdao_1_1BoundingBox_ae6c8bca4b93e6e0974a574b5323198a1_icgraph.png" border="0" usemap="#aclassdao_1_1BoundingBox_ae6c8bca4b93e6e0974a574b5323198a1_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1BoundingBox_ae6c8bca4b93e6e0974a574b5323198a1_icgraph" id="aclassdao_1_1BoundingBox_ae6c8bca4b93e6e0974a574b5323198a1_icgraph">
 <area shape="rect" title="构造函数" alt="" coords="212,45,447,70"/>
 <area shape="rect" href="classdao_1_1AtlasTexture.html#a826688b7ffa49aab70c62e533613843c" title="构造函数" alt="" coords="13,5,156,45"/>
@@ -290,20 +257,20 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">dao::BoundingBox::~BoundingBox </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="afb51de089652634ea4fa653c0aa86b61" name="afb51de089652634ea4fa653c0aa86b61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb51de089652634ea4fa653c0aa86b61">&#9670;&#160;</a></span>getBottom()</h2>
 
@@ -316,13 +283,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">float dao::BoundingBox::getBottom </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -347,13 +314,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">float dao::BoundingBox::getHeight </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -378,13 +345,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">float dao::BoundingBox::getLeft </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -409,13 +376,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">float dao::BoundingBox::getRight </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -440,13 +407,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">float dao::BoundingBox::getTop </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -471,13 +438,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">float dao::BoundingBox::getWidth </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -502,24 +469,17 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">bool dao::BoundingBox::isInBoundingBox </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -546,14 +506,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">bool dao::BoundingBox::isIntersects </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdao_1_1BoundingBox.html">BoundingBox</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a93a90662a60c5440bff020c1b68acf54">BoundingBox</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -581,13 +540,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">bool dao::BoundingBox::isValid </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -614,14 +573,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::BoundingBox::moveHorizontal </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>distance</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -649,14 +607,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::BoundingBox::moveVertical </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>distance</em></td><td>)</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>distance</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -684,13 +641,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::BoundingBox::normalize </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -718,36 +675,27 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::BoundingBox::set </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>left</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>up</em>, </td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>up</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>right</em>, </td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>right</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>down</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>down</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -785,14 +733,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::BoundingBox::setDown </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>down</em></td><td>)</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>down</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -822,14 +769,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::BoundingBox::setLeft </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>left</em></td><td>)</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>left</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -859,14 +805,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::BoundingBox::setRight </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>right</em></td><td>)</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>right</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -896,14 +841,13 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::BoundingBox::setUp </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>up</em></td><td>)</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>up</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -926,4 +870,12 @@ Public 成员函数</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <script src="style.js"></script>

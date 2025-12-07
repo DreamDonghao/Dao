@@ -3,16 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>DaoUI: code/include/app.hpp 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -35,28 +36,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- 制作者 Doxygen 1.9.8 -->
+<!-- 制作者 Doxygen 1.15.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function() { init_codefold(0); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -69,10 +64,9 @@ $(document).ready(function() { init_codefold(0); });
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('app_8hpp_source.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('app_8hpp_source.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -106,9 +100,11 @@ $(document).ready(function(){initNavTree('app_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#</span><span class="preprocessor">define</span> <span class="preprocessor">APP_HPP</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">window</span><span class="preprocessor">.</span><span class="preprocessor">hpp</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespacedao.html">    8</a></span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespacedao.html">dao</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">/// @brief 应用</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">/// @details 用来管理整个应用程序</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdao_1_1App.html">   11</a></span>    <span class="keyword">class</span> App <span class="keyword">final</span> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classdao_1_1App.html#a9a9532e7781ab70dbf56825c21a42477">   13</a></span>        ~<a class="code hl_function" href="classdao_1_1App.html#a9a9532e7781ab70dbf56825c21a42477">App</a>() = <span class="keywordflow">default</span>;</div>
@@ -116,10 +112,12 @@ $(document).ready(function(){initNavTree('app_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="comment">/// @brief 创建应用</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="comment">/// @en</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="comment">/// @returns 一个应用实例</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classdao_1_1App.html#a224f1ba54f77ca543626ee47fe52d050">   18</a></span>        [[nodiscard]] <span class="keyword">static</span> App &amp;<a class="code hl_function" href="classdao_1_1App.html#a224f1ba54f77ca543626ee47fe52d050">getApp</a>() {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keyword">static</span> App app{};</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">return</span> app;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
+</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="comment">/// @brief 创建窗口</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="comment">/// @param width 窗口默认宽度</span></div>
@@ -145,16 +143,19 @@ $(document).ready(function(){initNavTree('app_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">/// 渲染所有窗口内容</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">void</span> render();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    };</div>
+</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#</span><span class="preprocessor">endif</span> <span class="comment">//APP_HPP</span></div>
-<div class="ttc" id="aclassdao_1_1App_html_a0061703c1bb3e91629dffa39ad7aca00"><div class="ttname"><a href="classdao_1_1App.html#a0061703c1bb3e91629dffa39ad7aca00">dao::App::createWindow</a></div><div class="ttdeci">Window &amp; createWindow(uint32_t width, uint32_t height)</div><div class="ttdoc">创建窗口</div><div class="ttdef"><b>Definition</b> <a href="app_8cpp_source.html#l00025">app.cpp:25</a></div></div>
-<div class="ttc" id="aclassdao_1_1App_html_a224f1ba54f77ca543626ee47fe52d050"><div class="ttname"><a href="classdao_1_1App.html#a224f1ba54f77ca543626ee47fe52d050">dao::App::getApp</a></div><div class="ttdeci">static App &amp; getApp()</div><div class="ttdoc">创建应用 @en</div><div class="ttdef"><b>Definition</b> <a href="app_8hpp_source.html#l00018">app.hpp:18</a></div></div>
-<div class="ttc" id="aclassdao_1_1App_html_a29e74553558cb3f86ef4c1beb58947d0"><div class="ttname"><a href="classdao_1_1App.html#a29e74553558cb3f86ef4c1beb58947d0">dao::App::getWindow</a></div><div class="ttdeci">Window &amp; getWindow(const uint32_t windowId)</div><div class="ttdoc">获取窗口</div><div class="ttdef"><b>Definition</b> <a href="app_8hpp_source.html#l00032">app.hpp:32</a></div></div>
-<div class="ttc" id="aclassdao_1_1App_html_a4b5486e80b896ce8140f1f844b403422"><div class="ttname"><a href="classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422">dao::App::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">启动应用</div><div class="ttdef"><b>Definition</b> <a href="app_8cpp_source.html#l00008">app.cpp:8</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html_a0061703c1bb3e91629dffa39ad7aca00"><div class="ttname"><a href="classdao_1_1App.html#a0061703c1bb3e91629dffa39ad7aca00">dao::App::createWindow</a></div><div class="ttdeci">Window &amp; createWindow(uint32_t width, uint32_t height)</div><div class="ttdoc">创建窗口</div><div class="ttdef"><b>定义</b> <a href="app_8cpp_source.html#l00025">app.cpp:25</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html_a224f1ba54f77ca543626ee47fe52d050"><div class="ttname"><a href="classdao_1_1App.html#a224f1ba54f77ca543626ee47fe52d050">dao::App::getApp</a></div><div class="ttdeci">static App &amp; getApp()</div><div class="ttdoc">创建应用 @en</div><div class="ttdef"><b>定义</b> <a href="#l00018">app.hpp:18</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html_a29e74553558cb3f86ef4c1beb58947d0"><div class="ttname"><a href="classdao_1_1App.html#a29e74553558cb3f86ef4c1beb58947d0">dao::App::getWindow</a></div><div class="ttdeci">Window &amp; getWindow(const uint32_t windowId)</div><div class="ttdoc">获取窗口</div><div class="ttdef"><b>定义</b> <a href="#l00032">app.hpp:32</a></div></div>
+<div class="ttc" id="aclassdao_1_1App_html_a4b5486e80b896ce8140f1f844b403422"><div class="ttname"><a href="classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422">dao::App::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">启动应用</div><div class="ttdef"><b>定义</b> <a href="app_8cpp_source.html#l00008">app.cpp:8</a></div></div>
 <div class="ttc" id="aclassdao_1_1App_html_a9a9532e7781ab70dbf56825c21a42477"><div class="ttname"><a href="classdao_1_1App.html#a9a9532e7781ab70dbf56825c21a42477">dao::App::~App</a></div><div class="ttdeci">~App()=default</div></div>
-<div class="ttc" id="aclassdao_1_1Window_html"><div class="ttname"><a href="classdao_1_1Window.html">dao::Window</a></div><div class="ttdef"><b>Definition</b> <a href="window_8hpp_source.html#l00013">window.hpp:13</a></div></div>
-<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00004">main.cpp:4</a></div></div>
-<div class="ttc" id="anamespacedao_html"><div class="ttname"><a href="namespacedao.html">dao</a></div><div class="ttdef"><b>Definition</b> <a href="app_8hpp_source.html#l00008">app.hpp:8</a></div></div>
+<div class="ttc" id="aclassdao_1_1Window_html"><div class="ttname"><a href="classdao_1_1Window.html">dao::Window</a></div><div class="ttdef"><b>定义</b> <a href="window_8hpp_source.html#l00013">window.hpp:13</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>定义</b> <a href="main_8cpp_source.html#l00004">main.cpp:4</a></div></div>
+<div class="ttc" id="anamespacedao_html"><div class="ttname"><a href="namespacedao.html">dao</a></div><div class="ttdef"><b>定义</b> <a href="#l00008">app.hpp:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <script src="style.js"></script>

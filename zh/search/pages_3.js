@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['开发_0',['开发',['../use.html',1,'使用 DaoUI 开发'],['../join.html',1,'参与 DaoUI 开发']]]
+  ['4_20编写代码并提交_0',['4. 编写代码并提交',['../join.html#autotoc_md8',1,'']]]
 ];
