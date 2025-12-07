@@ -9,17 +9,26 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # 1. 拉取代码
       - uses: actions/checkout@v4
 
+      # 2. 安装 Doxygen 和 Graphviz
       - name: Install Doxygen and Graphviz
         run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
 
+      # 3. 创建输出目录，避免 Doxygen 报错
+      - name: Create output directories
+        run: mkdir -p doxygen_output/zh/html doxygen_output/en/html
+
+      # 4. 构建中文文档
       - name: Build Chinese docs
         run: doxygen doxygen/Doxyfiles/Doxyfile.zh
 
+      # 5. 构建英文文档
       - name: Build English docs
         run: doxygen doxygen/Doxyfiles/Doxyfile.en
 
+      # 6. 部署到 gh-pages
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
