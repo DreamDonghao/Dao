@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vertices_0',['vertices',['../structdao_1_1AtlasDrawBatch.html#a1156d0f6a50c1dc7f3125008acac0007',1,'dao::AtlasDrawBatch']]]
+  ['join_20participate_20in_20the_20opening_20of_20daoui_0',['@ref join &quot;Participate in the opening of DaoUI',['../index.html#autotoc_md21',1,'']]],
+  ['join_2emd_1',['join.md',['../join_8md.html',1,'']]]
 ];

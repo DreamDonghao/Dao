@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['_7eapp_0',['~App',['../classdao_1_1App.html#a9a9532e7781ab70dbf56825c21a42477',1,'dao::App']]],
-  ['_7eboundingbox_1',['~BoundingBox',['../classdao_1_1BoundingBox.html#a6e4b9d36fbc8fbe09805dc48b68e99fa',1,'dao::BoundingBox']]],
-  ['_7epage_2',['~Page',['../classdao_1_1Page.html#aa593d76b639520c4ea0287951c0cba92',1,'dao::Page']]],
-  ['_7ewindow_3',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
+  ['normalize_0',['normalize',['../classdao_1_1BoundingBox.html#ae6d7ef9eadc2c39d706136376acd0903',1,'dao::BoundingBox']]],
+  ['normalizedbottom_1',['normalizedBottom',['../structdao_1_1AtlasRegion.html#ab8e8894575fbe552ec695dc9c107b404',1,'dao::AtlasRegion']]],
+  ['normalizedleft_2',['normalizedLeft',['../structdao_1_1AtlasRegion.html#a17edff3f4a4d876fdd37b3043bf4c94f',1,'dao::AtlasRegion']]],
+  ['normalizedright_3',['normalizedRight',['../structdao_1_1AtlasRegion.html#a1e90ac03506da0fb1ade02ab73529217',1,'dao::AtlasRegion']]],
+  ['normalizedtop_4',['normalizedTop',['../structdao_1_1AtlasRegion.html#a9a99d96ccd38a763af27a68faae6fbcb',1,'dao::AtlasRegion']]]
 ];

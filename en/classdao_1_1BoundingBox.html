@@ -17,7 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="my_style.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -28,7 +28,7 @@
   <td id="projectalign">
    <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
    </div>
-   <div id="projectbrief">A cross-platform C++ framework</div>
+   <div id="projectbrief">C++ cross-platform general GUI framework</div>
   </td>
  </tr>
  </tbody>
@@ -148,8 +148,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8ef8d8b5d59b6bc1c6403aff0d83bf1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查是否有效  <br /></td></tr>
 <tr class="separator:a8ef8d8b5d59b6bc1c6403aff0d83bf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e0ea9cc1393c414988196618e3ec7ab" id="r_a1e0ea9cc1393c414988196618e3ec7ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a1e0ea9cc1393c414988196618e3ec7ab">isInBoundingBox</a> (const float x, const float y) const</td></tr>
+<tr class="memdesc:a1e0ea9cc1393c414988196618e3ec7ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断点 (x,y) 是否在边界框内  <br /></td></tr>
 <tr class="separator:a1e0ea9cc1393c414988196618e3ec7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab6cb445bcbf8004bb4990599b31383b" id="r_aab6cb445bcbf8004bb4990599b31383b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#aab6cb445bcbf8004bb4990599b31383b">isIntersects</a> (const <a class="el" href="classdao_1_1BoundingBox.html">BoundingBox</a> &amp;other) const</td></tr>
+<tr class="memdesc:aab6cb445bcbf8004bb4990599b31383b"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断两个边界框是否有重合部分  <br /></td></tr>
 <tr class="separator:aab6cb445bcbf8004bb4990599b31383b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6f24982522d31856add6116050a235" id="r_a8f6f24982522d31856add6116050a235"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a8f6f24982522d31856add6116050a235">getLeft</a> () const</td></tr>
 <tr class="memdesc:a8f6f24982522d31856add6116050a235"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取左边界坐标  <br /></td></tr>
@@ -164,8 +166,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afb51de089652634ea4fa653c0aa86b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取下边界坐标  <br /></td></tr>
 <tr class="separator:afb51de089652634ea4fa653c0aa86b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16f176a1257d31004c3b89d32f78b401" id="r_a16f176a1257d31004c3b89d32f78b401"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a16f176a1257d31004c3b89d32f78b401">getWidth</a> () const</td></tr>
+<tr class="memdesc:a16f176a1257d31004c3b89d32f78b401"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取宽度  <br /></td></tr>
 <tr class="separator:a16f176a1257d31004c3b89d32f78b401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a393e0f4d0a69bbdde4ff42b96c73c4bc" id="r_a393e0f4d0a69bbdde4ff42b96c73c4bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1BoundingBox.html#a393e0f4d0a69bbdde4ff42b96c73c4bc">getHeight</a> () const</td></tr>
+<tr class="memdesc:a393e0f4d0a69bbdde4ff42b96c73c4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取高度  <br /></td></tr>
 <tr class="separator:a393e0f4d0a69bbdde4ff42b96c73c4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -326,8 +330,8 @@ Here is the caller graph for this function:</div>
 <p>获取下边界坐标 </p>
 <dl class="section return"><dt>Returns</dt><dd>下边界坐标值 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00105">105</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  105</span>{ <span class="keywordflow">return</span> m_down; }</div>
+<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00109">109</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>{ <span class="keywordflow">return</span> m_down; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -354,8 +358,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00111">111</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  111</span>{ <span class="keywordflow">return</span> m_down - m_up; }</div>
+<p>获取高度 </p>
+<dl class="section return"><dt>Returns</dt><dd>高度值 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00117">117</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  117</span>{ <span class="keywordflow">return</span> m_down - m_up; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -385,8 +392,8 @@ Here is the caller graph for this function:</div>
 <p>获取左边界坐标 </p>
 <dl class="section return"><dt>Returns</dt><dd>左边界坐标 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00093">93</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   93</span>{ <span class="keywordflow">return</span> m_left; }</div>
+<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00097">97</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>{ <span class="keywordflow">return</span> m_left; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -416,8 +423,8 @@ Here is the caller graph for this function:</div>
 <p>获取右边界坐标 </p>
 <dl class="section return"><dt>Returns</dt><dd>右边界x坐标值 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00101">101</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>{ <span class="keywordflow">return</span> m_right; }</div>
+<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00105">105</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{ <span class="keywordflow">return</span> m_right; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -447,8 +454,8 @@ Here is the caller graph for this function:</div>
 <p>获取上边界坐标 </p>
 <dl class="section return"><dt>Returns</dt><dd>上边界坐标 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00097">97</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>{ <span class="keywordflow">return</span> m_up; }</div>
+<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00101">101</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{ <span class="keywordflow">return</span> m_up; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -475,8 +482,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00108">108</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  108</span>{ <span class="keywordflow">return</span> m_right - m_left; }</div>
+<p>获取宽度 </p>
+<dl class="section return"><dt>Returns</dt><dd>宽度值 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00113">113</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>{ <span class="keywordflow">return</span> m_right - m_left; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -514,10 +524,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00081">81</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>                                                                               {</div>
-<div class="line"><span class="lineno">   82</span>            <span class="keywordflow">return</span> (x &gt;= m_left &amp;&amp; x &lt;= m_right) &amp;&amp; (y &gt;= m_up &amp;&amp; y &lt;= m_down);</div>
-<div class="line"><span class="lineno">   83</span>        }</div>
+<p>判断点 (x,y) 是否在边界框内 </p>
+<dl class="section return"><dt>Returns</dt><dd>点 (x,y) 在边界框 返回 true 否则 false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00083">83</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                                               {</div>
+<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">return</span> (x &gt;= m_left &amp;&amp; x &lt;= m_right) &amp;&amp; (y &gt;= m_up &amp;&amp; y &lt;= m_down);</div>
+<div class="line"><span class="lineno">   85</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -545,11 +558,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00085">85</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                                        {</div>
-<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">return</span> std::max(m_left, other.m_left) &lt;= std::min(m_right, other.m_right) &amp;&amp;</div>
-<div class="line"><span class="lineno">   87</span>                   std::max(m_up, other.m_up) &lt;= std::min(m_down, other.m_down);</div>
-<div class="line"><span class="lineno">   88</span>        }</div>
+<p>判断两个边界框是否有重合部分 </p>
+<dl class="section return"><dt>Returns</dt><dd>有重合部分返回 true 否者false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00089">89</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>                                                                        {</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">return</span> std::max(m_left, other.m_left) &lt;= std::min(m_right, other.m_right) &amp;&amp;</div>
+<div class="line"><span class="lineno">   91</span>                   std::max(m_up, other.m_up) &lt;= std::min(m_down, other.m_down);</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -577,7 +593,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>检查是否有效 </p>
-<dl class="section return"><dt>Returns</dt><dd>判断有效的布尔值 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>有效返回 ture 否则 false </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="bounding__box_8hpp_source.html#l00077">77</a> of file <a class="el" href="bounding__box_8hpp_source.html">bounding_box.hpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   77</span>                                           {</div>

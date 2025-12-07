@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['cleardrawbatches_0',['clearDrawBatches',['../classdao_1_1AtlasVertexBatchBuilder.html#a2b7e420ae8a48aaaadc9bc526954889a',1,'dao::AtlasVertexBatchBuilder']]],
-  ['createwindow_1',['createWindow',['../classdao_1_1App.html#a0061703c1bb3e91629dffa39ad7aca00',1,'dao::App']]]
+  ['3_20create_20a_20feature_20branch_0',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]]
 ];

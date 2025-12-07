@@ -25,6 +25,20 @@
 var NAVTREE =
 [
   [ "DaoUI", "index.html", [
+    [ "Participate in DaoUI Development", "join.html", [
+      [ "Development Process", "join.html#autotoc_md0", [
+        [ "1. Fork the Repository", "join.html#autotoc_md2", null ],
+        [ "2. Clone the Repository", "join.html#autotoc_md4", null ],
+        [ "3. Create a Feature Branch", "join.html#autotoc_md6", null ],
+        [ "4. Write Code and Commit", "join.html#autotoc_md8", null ],
+        [ "5. Submit a Pull Request", "join.html#autotoc_md10", null ],
+        [ "6. Review and Revision", "join.html#autotoc_md12", null ],
+        [ "7. Merge", "join.html#autotoc_md14", null ],
+        [ "8. Code of Conduct", "join.html#autotoc_md16", null ]
+      ] ],
+      [ "Project Dependencies", "join.html#autotoc_md18", null ]
+    ] ],
+    [ "use", "md_doxygen_2docs__md_2en_2use.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
