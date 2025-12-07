@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['page_0',['page',['../classdao_1_1Page.html',1,'dao::Page'],['../classdao_1_1Page.html#a5d99b85284226940da2331a928d881c9',1,'dao::Page::Page()']]],
-  ['page_2ehpp_1',['page.hpp',['../page_8hpp.html',1,'']]]
+  ['cleardrawbatches_0',['clearDrawBatches',['../classdao_1_1AtlasVertexBatchBuilder.html#a2b7e420ae8a48aaaadc9bc526954889a',1,'dao::AtlasVertexBatchBuilder']]],
+  ['createwindow_1',['createWindow',['../classdao_1_1App.html#a0061703c1bb3e91629dffa39ad7aca00',1,'dao::App']]]
 ];

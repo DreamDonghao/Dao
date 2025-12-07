@@ -25,6 +25,20 @@
 var NAVTREE =
 [
   [ "DaoUI", "index.html", [
+    [ "参与 DaoUI 开发", "join.html", [
+      [ "开发流程", "join.html#autotoc_md0", [
+        [ "1. Fork 仓库", "join.html#autotoc_md2", null ],
+        [ "2. 克隆仓库", "join.html#autotoc_md4", null ],
+        [ "3. 创建工作分支", "join.html#autotoc_md6", null ],
+        [ "4. 编写代码并提交", "join.html#autotoc_md8", null ],
+        [ "5. 提交 Pull Request", "join.html#autotoc_md10", null ],
+        [ "6. 审核与修改", "join.html#autotoc_md12", null ],
+        [ "7. 合并", "join.html#autotoc_md14", null ],
+        [ "8. 行为准则", "join.html#autotoc_md16", null ]
+      ] ],
+      [ "项目依赖", "join.html#autotoc_md18", null ]
+    ] ],
+    [ "使用 DaoUI 开发", "use.html", null ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
       [ "命名空间成员", "namespacemembers.html", [
