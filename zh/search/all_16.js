@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['set_0',['set',['../classdao_1_1BoundingBox.html#ac07cd47e42be4a99d06248a43220a9b6',1,'dao::BoundingBox']]],
-  ['setdown_1',['setDown',['../classdao_1_1BoundingBox.html#add5d58c61a90c33969fe50428902e46c',1,'dao::BoundingBox']]],
-  ['setleft_2',['setLeft',['../classdao_1_1BoundingBox.html#af3b3eca55875d1be3ff884d84560b84b',1,'dao::BoundingBox']]],
-  ['setright_3',['setRight',['../classdao_1_1BoundingBox.html#af21ff407d200dae6bf10683cf2338570',1,'dao::BoundingBox']]],
-  ['setup_4',['setUp',['../classdao_1_1BoundingBox.html#acaccf53cc548817536a25483c05f514a',1,'dao::BoundingBox']]]
+  ['update_0',['update',['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page']]],
+  ['use_20使用_20daoui_20开发自己的应用_1',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;使用 DaoUI 开发自己的应用&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
+  ['use_2emd_2',['use.md',['../use_8md.html',1,'']]]
 ];

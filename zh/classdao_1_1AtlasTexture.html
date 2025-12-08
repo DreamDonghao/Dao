@@ -110,18 +110,18 @@ dao::AtlasTexture 的协作图:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a4e849cffd54d3c5dd1d8e0a1d190c2fa" id="r_a4e849cffd54d3c5dd1d8e0a1d190c2fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e849cffd54d3c5dd1d8e0a1d190c2fa">AtlasTexture</a> ()=default</td></tr>
-<tr class="memitem:a826688b7ffa49aab70c62e533613843c" id="r_a826688b7ffa49aab70c62e533613843c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a826688b7ffa49aab70c62e533613843c">AtlasTexture</a> (<a class="el" href="namespacedao.html#a780e43ff2f19283cc0cb7e9ffb3f8599">TextureEnum</a> textureName, float left, float up, float right, float down)</td></tr>
-<tr class="memdesc:a826688b7ffa49aab70c62e533613843c"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
-<tr class="memitem:ae967e297d286446742a734a0f31150c4" id="r_ae967e297d286446742a734a0f31150c4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacedao.html#a780e43ff2f19283cc0cb7e9ffb3f8599">TextureEnum</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae967e297d286446742a734a0f31150c4">getName</a> () const</td></tr>
-<tr class="memdesc:ae967e297d286446742a734a0f31150c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取枚举名  <br /></td></tr>
+<tr class="memitem:a1dba24e3ace1b37451e4792b962915a1" id="r_a1dba24e3ace1b37451e4792b962915a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dba24e3ace1b37451e4792b962915a1">AtlasTexture</a> (std::uint32_t textureId, float left, float up, float right, float down)</td></tr>
+<tr class="memdesc:a1dba24e3ace1b37451e4792b962915a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <br /></td></tr>
+<tr class="memitem:a62bf22784fb42747cfecd05ed63df639" id="r_a62bf22784fb42747cfecd05ed63df639"><td class="memItemLeft" align="right" valign="top">const uint32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62bf22784fb42747cfecd05ed63df639">getName</a> () const</td></tr>
+<tr class="memdesc:a62bf22784fb42747cfecd05ed63df639"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取枚举名  <br /></td></tr>
 <tr class="memitem:ad30f8153128927abbc605d3a399e26aa" id="r_ad30f8153128927abbc605d3a399e26aa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdao_1_1BoundingBox.html">BoundingBox</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad30f8153128927abbc605d3a399e26aa">getBoundingBox</a> () const</td></tr>
 <tr class="memdesc:ad30f8153128927abbc605d3a399e26aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取显示边界框  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>图集纹理 </p>
-<p>表示纹理图集中的一个纹理区域 本类型本身不持有实际纹理数据，只保存纹理名称的枚举值 可通过 <a class="el" href="namespacedao.html#a6375e3cbf4c640432b1d929a73234836" title="当纹理数量与纹理图集区域数据冲突时中断编译">getAtlasRegion()</a> 获取其所在图集及在图集中的区域数据 </p>
+<p>表示纹理图集中的一个纹理区域 本类型本身不持有实际纹理数据，只保存纹理名称的枚举值 可通过 <a class="el" href="namespacedao.html#adb59a454cda7d4128543e00286ec1efc" title="通过纹理名称枚举获取图集区域数据">getAtlasRegion()</a> 获取其所在图集及在图集中的区域数据 </p>
 
-<p class="definition">在文件 <a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a> 第 <a class="el" href="atlas__texture_8hpp_source.html#l00014">14</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a> 第 <a class="el" href="atlas__texture_8hpp_source.html#l00015">15</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a4e849cffd54d3c5dd1d8e0a1d190c2fa" name="a4e849cffd54d3c5dd1d8e0a1d190c2fa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e849cffd54d3c5dd1d8e0a1d190c2fa">&#9670;&#160;</a></span>AtlasTexture() <span class="overload">[1/2]</span></h2>
@@ -148,8 +148,8 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="a826688b7ffa49aab70c62e533613843c" name="a826688b7ffa49aab70c62e533613843c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a826688b7ffa49aab70c62e533613843c">&#9670;&#160;</a></span>AtlasTexture() <span class="overload">[2/2]</span></h2>
+<a id="a1dba24e3ace1b37451e4792b962915a1" name="a1dba24e3ace1b37451e4792b962915a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dba24e3ace1b37451e4792b962915a1">&#9670;&#160;</a></span>AtlasTexture() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +157,7 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">dao::AtlasTexture::AtlasTexture </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedao.html#a780e43ff2f19283cc0cb7e9ffb3f8599">TextureEnum</a></td>          <td class="paramname"><span class="paramname"><em>textureName</em></span>, </td>
+          <td class="paramtype">std::uint32_t</td>          <td class="paramname"><span class="paramname"><em>textureId</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -185,7 +185,7 @@ Public 成员函数</h2></td></tr>
 <p>构造函数 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">textureName</td><td>纹理枚举名 </td></tr>
+    <tr><td class="paramname">textureId</td><td>纹理枚举名 </td></tr>
     <tr><td class="paramname">left</td><td>左边界坐标 </td></tr>
     <tr><td class="paramname">up</td><td>上区边界标 </td></tr>
     <tr><td class="paramname">right</td><td>右边界坐标 </td></tr>
@@ -193,20 +193,6 @@ Public 成员函数</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p class="definition">在文件 <a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a> 第 <a class="el" href="atlas__texture_8cpp_source.html#l00007">7</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>        : m_textureName(textureName), m_boundingBox(left, up, right, down) {</div>
-<div class="line"><span class="lineno">   10</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
-函数调用图:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdao_1_1AtlasTexture_a826688b7ffa49aab70c62e533613843c_cgraph.png" border="0" usemap="#aclassdao_1_1AtlasTexture_a826688b7ffa49aab70c62e533613843c_cgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1AtlasTexture_a826688b7ffa49aab70c62e533613843c_cgraph" id="aclassdao_1_1AtlasTexture_a826688b7ffa49aab70c62e533613843c_cgraph">
-<area shape="rect" title="构造函数" alt="" coords="5,5,148,45"/>
-<area shape="rect" href="classdao_1_1BoundingBox.html#ae6c8bca4b93e6e0974a574b5323198a1" title="构造函数" alt="" coords="196,13,431,38"/>
-<area shape="poly" title=" " alt="" coords="148,23,183,23,183,28,148,28"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -237,13 +223,13 @@ Public 成员函数</h2></td></tr>
 <p>获取显示边界框 </p>
 <dl class="section return"><dt>返回</dt><dd>边界框 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a> 第 <a class="el" href="atlas__texture_8hpp_source.html#l00032">32</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> m_boundingBox; }</div>
+<p class="definition">在文件 <a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a> 第 <a class="el" href="atlas__texture_8hpp_source.html#l00033">33</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> m_boundingBox; }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ae967e297d286446742a734a0f31150c4" name="ae967e297d286446742a734a0f31150c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae967e297d286446742a734a0f31150c4">&#9670;&#160;</a></span>getName()</h2>
+<a id="a62bf22784fb42747cfecd05ed63df639" name="a62bf22784fb42747cfecd05ed63df639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62bf22784fb42747cfecd05ed63df639">&#9670;&#160;</a></span>getName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +238,7 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacedao.html#a780e43ff2f19283cc0cb7e9ffb3f8599">TextureEnum</a> &amp; dao::AtlasTexture::getName </td>
+          <td class="memname">const uint32_t &amp; dao::AtlasTexture::getName </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -268,15 +254,15 @@ Public 成员函数</h2></td></tr>
 <p>获取枚举名 </p>
 <dl class="section return"><dt>返回</dt><dd>纹理枚举名 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a> 第 <a class="el" href="atlas__texture_8hpp_source.html#l00028">28</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{ <span class="keywordflow">return</span> m_textureName; }</div>
+<p class="definition">在文件 <a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a> 第 <a class="el" href="atlas__texture_8hpp_source.html#l00029">29</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{ <span class="keywordflow">return</span> m_textureId; }</div>
 </div><!-- fragment --><div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdao_1_1AtlasTexture_ae967e297d286446742a734a0f31150c4_icgraph.png" border="0" usemap="#aclassdao_1_1AtlasTexture_ae967e297d286446742a734a0f31150c4_icgraph" loading="lazy" alt=""/></div>
-<map name="aclassdao_1_1AtlasTexture_ae967e297d286446742a734a0f31150c4_icgraph" id="aclassdao_1_1AtlasTexture_ae967e297d286446742a734a0f31150c4_icgraph">
+<div class="center"><img src="classdao_1_1AtlasTexture_a62bf22784fb42747cfecd05ed63df639_icgraph.png" border="0" usemap="#aclassdao_1_1AtlasTexture_a62bf22784fb42747cfecd05ed63df639_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1AtlasTexture_a62bf22784fb42747cfecd05ed63df639_icgraph" id="aclassdao_1_1AtlasTexture_a62bf22784fb42747cfecd05ed63df639_icgraph">
 <area shape="rect" title="获取枚举名" alt="" coords="265,5,408,45"/>
-<area shape="rect" href="classdao_1_1AtlasVertexBatchBuilder.html#a78062c47c490c8aaa4ca34b10eefc0d2" title="添加绘制元素到批处理" alt="" coords="5,5,217,45"/>
+<area shape="rect" href="classdao_1_1AtlasVertexBatchBuilder.html#a63d160235c199e9b34c3a027db0ba637" title="添加绘制元素到批处理" alt="" coords="5,5,217,45"/>
 <area shape="poly" title=" " alt="" coords="251,28,218,28,218,23,251,23"/>
 </map>
 </div>
@@ -285,7 +271,6 @@ Public 成员函数</h2></td></tr>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>code/include/<a class="el" href="atlas__texture_8hpp_source.html">atlas_texture.hpp</a></li>
-<li>code/src/<a class="el" href="atlas__texture_8cpp_source.html">atlas_texture.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

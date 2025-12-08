@@ -44,14 +44,12 @@ var NAVTREE =
       [ "命名空间成员", "namespacemembers.html", [
         [ "全部", "namespacemembers.html", null ],
         [ "函数", "namespacemembers_func.html", null ],
-        [ "变量", "namespacemembers_vars.html", null ],
-        [ "枚举", "namespacemembers_enum.html", null ]
+        [ "变量", "namespacemembers_vars.html", null ]
       ] ]
     ] ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
-      [ "类继承关系", "hierarchy.html", "hierarchy" ],
       [ "类成员", "functions.html", [
         [ "全部", "functions.html", null ],
         [ "函数", "functions_func.html", null ],
@@ -59,11 +57,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "文件", "files.html", [
-      [ "文件列表", "files.html", "files_dup" ],
-      [ "文件成员", "globals.html", [
-        [ "全部", "globals.html", null ],
-        [ "函数", "globals_func.html", null ]
-      ] ]
+      [ "文件列表", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];

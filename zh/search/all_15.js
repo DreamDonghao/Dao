@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['regions_0',['regions',['../namespacedao.html#a76836fc8e05996c1d00ba19b40f941d5',1,'dao']]],
-  ['registertexture_1',['registerTexture',['../classdao_1_1TestPage.html#a3ea49f5cc6847a3880fa553a4bbd89dd',1,'dao::TestPage::registerTexture()'],['../classdao_1_1Window.html#add1659124b90d0527dba4e13226e6e1f',1,'dao::Window::registerTexture()'],['../classdao_1_1Page.html#a5345c4d5b1189d27fed1e162a7f71fe6',1,'dao::Page::registerTexture()']]],
-  ['render_2',['render',['../classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10',1,'dao::Window']]],
-  ['request_3',['5. 提交 Pull Request',['../join.html#autotoc_md10',1,'']]],
-  ['run_4',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App::run()'],['../classdao_1_1Window.html#a9c7a655497da8cb98f664adce88a8149',1,'dao::Window::run()']]]
+  ['set_0',['set',['../classdao_1_1BoundingBox.html#a9dd1dc9331a7277dccc08a74a31b4f0e',1,'dao::BoundingBox']]],
+  ['setdown_1',['setDown',['../classdao_1_1BoundingBox.html#add5d58c61a90c33969fe50428902e46c',1,'dao::BoundingBox']]],
+  ['setleft_2',['setLeft',['../classdao_1_1BoundingBox.html#af3b3eca55875d1be3ff884d84560b84b',1,'dao::BoundingBox']]],
+  ['setright_3',['setRight',['../classdao_1_1BoundingBox.html#af21ff407d200dae6bf10683cf2338570',1,'dao::BoundingBox']]],
+  ['setup_4',['setUp',['../classdao_1_1BoundingBox.html#acaccf53cc548817536a25483c05f514a',1,'dao::BoundingBox']]]
 ];

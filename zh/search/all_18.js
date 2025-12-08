@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['update_0',['update',['../classdao_1_1TestPage.html#abadea34ff9bd17ddeeb1386f74cbffe7',1,'dao::TestPage::update()'],['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page::update()']]],
-  ['use_20使用_20daoui_20开发自己的应用_1',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;使用 DaoUI 开发自己的应用&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
-  ['use_2emd_2',['use.md',['../use_8md.html',1,'']]]
+  ['window_0',['Window',['../classdao_1_1Window.html',1,'dao::Window'],['../classdao_1_1Window.html#a7871b77f1ae9767091437eadb7c9cfb6',1,'dao::Window::Window()']]],
+  ['window_2ecpp_1',['window.cpp',['../window_8cpp.html',1,'']]],
+  ['window_2ehpp_2',['window.hpp',['../window_8hpp.html',1,'']]]
 ];

@@ -1,9 +1,11 @@
 var classdao_1_1AtlasVertexBatchBuilder =
 [
-    [ "AtlasVertexBatchBuilder", "classdao_1_1AtlasVertexBatchBuilder.html#a622b2a1746e44932295007d7a9c5154a", null ],
-    [ "AtlasVertexBatchBuilder", "classdao_1_1AtlasVertexBatchBuilder.html#a63e327dc0693fa1d5d824292b6b7cd61", null ],
-    [ "addToBatch", "classdao_1_1AtlasVertexBatchBuilder.html#a78062c47c490c8aaa4ca34b10eefc0d2", null ],
-    [ "addToBatch", "classdao_1_1AtlasVertexBatchBuilder.html#a06547d5b2ec1e2d1c898eb7dfef80c57", null ],
-    [ "clearDrawBatches", "classdao_1_1AtlasVertexBatchBuilder.html#a2b7e420ae8a48aaaadc9bc526954889a", null ],
-    [ "getDrawBatches", "classdao_1_1AtlasVertexBatchBuilder.html#aa2c484f945426c5eeb4ccc82f44b84f9", null ]
+    [ "AtlasVertexBatchBuilder", "classdao_1_1AtlasVertexBatchBuilder.html#a5b55107eb6b7dbb925e52d15238fce85", null ],
+    [ "AtlasVertexBatchBuilder", "classdao_1_1AtlasVertexBatchBuilder.html#a69d5a10e9bad933d269220c6ca8be8b8", null ],
+    [ "addToBatch", "classdao_1_1AtlasVertexBatchBuilder.html#a63d160235c199e9b34c3a027db0ba637", null ],
+    [ "addToBatch", "classdao_1_1AtlasVertexBatchBuilder.html#aa48fcb2d4f60292c62ecb41553315dc4", null ],
+    [ "clearDrawBatches", "classdao_1_1AtlasVertexBatchBuilder.html#aa48c34e4e14d8689583564d35a957953", null ],
+    [ "expandQudaIndicesTo", "classdao_1_1AtlasVertexBatchBuilder.html#ab2ee3a2c622913550eb1733310cf5ed0", null ],
+    [ "getDrawBatches", "classdao_1_1AtlasVertexBatchBuilder.html#af52dfd0b0c4ed27243187565ff1986c0", null ],
+    [ "resetQudaIndices", "classdao_1_1AtlasVertexBatchBuilder.html#a1d446e2023962cc4b9990d5d32b1d435", null ]
 ];
