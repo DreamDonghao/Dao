@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['test_5fpage_2ehpp_0',['test_page.hpp',['../test__page_8hpp.html',1,'']]],
-  ['testpage_1',['TestPage',['../classdao_1_1TestPage.html',1,'dao::TestPage'],['../classdao_1_1TestPage.html#a23c89d2083d27e727bfb27d829ae6f83',1,'dao::TestPage::TestPage()']]],
-  ['textureenum_2',['TextureEnum',['../namespacedao.html#a780e43ff2f19283cc0cb7e9ffb3f8599',1,'dao']]],
-  ['the_20opening_20of_20daoui_3',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot;&gt;Participate in the opening of DaoUI&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
-  ['the_20repository_4',['the Repository',['../join.html#autotoc_md2',1,'1. Fork the Repository'],['../join.html#autotoc_md4',1,'2. Clone the Repository']]]
+  ['update_0',['update',['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page']]],
+  ['use_20develop_20your_20own_20application_20using_20daoui_1',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
+  ['use_2emd_2',['use.md',['../use_8md.html',1,'']]],
+  ['using_20daoui_3',['using DaoUI',['../index.html#autotoc_md20',1,'&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;'],['../use.html',1,'developed using DaoUI']]]
 ];

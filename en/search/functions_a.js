@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['testpage_0',['TestPage',['../classdao_1_1TestPage.html#a23c89d2083d27e727bfb27d829ae6f83',1,'dao::TestPage']]]
+  ['update_0',['update',['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cleardrawbatches_0',['clearDrawBatches',['../classdao_1_1AtlasVertexBatchBuilder.html#a2b7e420ae8a48aaaadc9bc526954889a',1,'dao::AtlasVertexBatchBuilder']]],
+  ['cleardrawbatches_0',['clearDrawBatches',['../classdao_1_1AtlasVertexBatchBuilder.html#aa48c34e4e14d8689583564d35a957953',1,'dao::AtlasVertexBatchBuilder']]],
   ['clone_20the_20repository_1',['2. Clone the Repository',['../join.html#autotoc_md4',1,'']]],
   ['code_20and_20commit_2',['4. Write Code and Commit',['../join.html#autotoc_md8',1,'']]],
   ['code_20of_20conduct_3',['8. Code of Conduct',['../join.html#autotoc_md16',1,'']]],
