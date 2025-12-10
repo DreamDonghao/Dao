@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['observe_0',['Observe',['../classdao_1_1SwitchDeleter.html#af79d9b0e72261e4eb0e29cfc35537b04a4e418f11f274aa1c52fb51a7707a2926',1,'dao::SwitchDeleter']]],
+  ['of_20conduct_1',['8. Code of Conduct',['../join.html#autotoc_md16',1,'']]],
+  ['of_20daoui_2',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot;&gt;Participate in the opening of DaoUI&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
+  ['opening_20of_20daoui_3',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot;&gt;Participate in the opening of DaoUI&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
+  ['operator_28_29_4',['operator()',['../classdao_1_1SwitchDeleter.html#aa99385585feabd061a0d4e52baa04571',1,'dao::SwitchDeleter']]],
+  ['own_20application_20using_20daoui_5',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]]
+];

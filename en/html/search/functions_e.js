@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['window_0',['Window',['../classdao_1_1Window.html#a7871b77f1ae9767091437eadb7c9cfb6',1,'dao::Window']]],
+  ['writetobatch_1',['writeToBatch',['../classdao_1_1Polygon.html#a7d5eafaf72a186523167884019d83704',1,'dao::Polygon::writeToBatch()'],['../classdao_1_1Rectangle.html#a3681bcb36b82fb4257960a510c91c010',1,'dao::Rectangle::writeToBatch()'],['../classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1',1,'dao::Drawable::writeToBatch()']]]
+];

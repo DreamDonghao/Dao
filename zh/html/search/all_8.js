@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['addpage_0',['addPage',['../classdao_1_1Window.html#ae9e681770ba3c48049ae44bdbc306559',1,'dao::Window']]],
+  ['addtobatch_1',['addToBatch',['../classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd',1,'dao::VertexBatchBuilder::addToBatch(const AtlasTexture &amp;texture)'],['../classdao_1_1VertexBatchBuilder.html#ad06758f1b7bb8b5dc26866d7e8838af3',1,'dao::VertexBatchBuilder::addToBatch(std::span&lt; SDL_Vertex &gt; v)']]],
+  ['addvertex_2',['addVertex',['../classdao_1_1Polygon.html#a6dac41bf6b2749e9fc6a89463d8c62ce',1,'dao::Polygon']]],
+  ['app_3',['App',['../classdao_1_1App.html',1,'dao']]],
+  ['app_2ecpp_4',['app.cpp',['../app_8cpp.html',1,'']]],
+  ['app_2ehpp_5',['app.hpp',['../app_8hpp.html',1,'']]],
+  ['atlas_5fregion_2ehpp_6',['atlas_region.hpp',['../atlas__region_8hpp.html',1,'']]],
+  ['atlas_5ftexture_2ecpp_7',['atlas_texture.cpp',['../atlas__texture_8cpp.html',1,'']]],
+  ['atlas_5ftexture_2ehpp_8',['atlas_texture.hpp',['../atlas__texture_8hpp.html',1,'']]],
+  ['atlasdrawbatch_9',['AtlasDrawBatch',['../structdao_1_1AtlasDrawBatch.html',1,'dao::AtlasDrawBatch'],['../structdao_1_1AtlasDrawBatch.html#a430514b197669c072e40ac2d3c9a0185',1,'dao::AtlasDrawBatch::AtlasDrawBatch(const uint32 a, std::vector&lt; SDL_Vertex &gt; v, std::unique_ptr&lt; std::vector&lt; int32 &gt;, SwitchDeleter&lt; std::vector&lt; int32 &gt; &gt; &gt; i)']]],
+  ['atlasid_10',['atlasId',['../structdao_1_1AtlasDrawBatch.html#a9f789a156087c7bfb62f5216fa183d95',1,'dao::AtlasDrawBatch::atlasId'],['../structdao_1_1AtlasRegion.html#ad5255a12b58d333d4efbaa164d9db76d',1,'dao::AtlasRegion::atlasId']]],
+  ['atlaspath_11',['atlasPath',['../structdao_1_1AtlasRegion.html#a42865c49c9613fc0f3c05182dab0b459',1,'dao::AtlasRegion']]],
+  ['atlasregion_12',['AtlasRegion',['../structdao_1_1AtlasRegion.html',1,'dao']]],
+  ['atlastexture_13',['AtlasTexture',['../classdao_1_1AtlasTexture.html',1,'dao::AtlasTexture'],['../classdao_1_1AtlasTexture.html#a4e849cffd54d3c5dd1d8e0a1d190c2fa',1,'dao::AtlasTexture::AtlasTexture()=default'],['../classdao_1_1AtlasTexture.html#a1e19f44123bd2183125f73f6c6c70569',1,'dao::AtlasTexture::AtlasTexture(uint32 textureId, float left, float up, float right, float down)']]]
+];
