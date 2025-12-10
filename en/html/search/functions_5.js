@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['isinboundingbox_0',['isInBoundingBox',['../classdao_1_1BoundingBox.html#a471a206bb57544106eef5458dd234962',1,'dao::BoundingBox']]],
-  ['isintersects_1',['isIntersects',['../classdao_1_1BoundingBox.html#aab6cb445bcbf8004bb4990599b31383b',1,'dao::BoundingBox']]],
-  ['isrunning_2',['isRunning',['../classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb',1,'dao::Window']]],
-  ['isvalid_3',['isValid',['../classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d',1,'dao::BoundingBox']]]
+  ['hexbytetou8_0',['hexByteToU8',['../namespacedao.html#a3decb5fab6d89a778cfca92971d8f8e7',1,'dao']]],
+  ['hextorgb_1',['hexToRGB',['../namespacedao.html#a9a5ef9d9569f5c1bb2bc496244b5c74f',1,'dao']]]
 ];

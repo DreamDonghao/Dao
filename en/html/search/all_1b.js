@@ -4,5 +4,5 @@ var searchData=
   ['window_2ecpp_1',['window.cpp',['../window_8cpp.html',1,'']]],
   ['window_2ehpp_2',['window.hpp',['../window_8hpp.html',1,'']]],
   ['write_20code_20and_20commit_3',['4. Write Code and Commit',['../join.html#autotoc_md8',1,'']]],
-  ['writetobatch_4',['writeToBatch',['../classdao_1_1Polygon.html#a7d5eafaf72a186523167884019d83704',1,'dao::Polygon::writeToBatch()'],['../classdao_1_1Rectangle.html#a3681bcb36b82fb4257960a510c91c010',1,'dao::Rectangle::writeToBatch()'],['../classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1',1,'dao::Drawable::writeToBatch()']]]
+  ['writetobatch_4',['writeToBatch',['../classdao_1_1Rectangle.html#a3681bcb36b82fb4257960a510c91c010',1,'dao::Rectangle::writeToBatch()'],['../classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1',1,'dao::Drawable::writeToBatch()']]]
 ];

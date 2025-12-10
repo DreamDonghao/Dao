@@ -7,6 +7,7 @@ var dir_f8a5fb882cc5ea0f84873b4bfbe1e42c =
     [ "atlas_texture.hpp", "atlas__texture_8hpp.html", "atlas__texture_8hpp" ],
     [ "better_stl.hpp", "better__stl_8hpp.html", "better__stl_8hpp" ],
     [ "bounding_box.hpp", "bounding__box_8hpp.html", "bounding__box_8hpp" ],
+    [ "color_rgb.hpp", "color__rgb_8hpp.html", "color__rgb_8hpp" ],
     [ "mapped_region.hpp", "mapped__region_8hpp.html", "mapped__region_8hpp" ],
     [ "vertex_batch_builder.hpp", "vertex__batch__builder_8hpp.html", "vertex__batch__builder_8hpp" ],
     [ "window.hpp", "window_8hpp.html", "window_8hpp" ]

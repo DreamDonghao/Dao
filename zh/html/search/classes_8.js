@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_0',['Window',['../classdao_1_1Window.html',1,'dao']]]
+  ['switchdeleter_0',['SwitchDeleter',['../classdao_1_1SwitchDeleter.html',1,'dao']]]
 ];

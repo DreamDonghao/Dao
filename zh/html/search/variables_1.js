@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['indices_0',['indices',['../structdao_1_1AtlasDrawBatch.html#ac3efeab6996d695fe441c338ad6ae3f8',1,'dao::AtlasDrawBatch']]]
+  ['b_0',['b',['../structdao_1_1ColorRGBA.html#a794d11a2a43e39a9d650071d50377c47',1,'dao::ColorRGBA']]]
 ];

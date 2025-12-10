@@ -9,8 +9,9 @@ var namespacedao =
     [ "AtlasRegion", "structdao_1_1AtlasRegion.html", "structdao_1_1AtlasRegion" ],
     [ "Window", "classdao_1_1Window.html", "classdao_1_1Window" ],
     [ "SwitchDeleter", "classdao_1_1SwitchDeleter.html", "classdao_1_1SwitchDeleter" ],
-    [ "Vertex", "structdao_1_1Vertex.html", "structdao_1_1Vertex" ],
-    [ "Polygon", "classdao_1_1Polygon.html", "classdao_1_1Polygon" ],
+    [ "ColorRGBA", "structdao_1_1ColorRGBA.html", "structdao_1_1ColorRGBA" ],
+    [ "GeometryVertex", "structdao_1_1GeometryVertex.html", "structdao_1_1GeometryVertex" ],
+    [ "Geometry", "classdao_1_1Geometry.html", "classdao_1_1Geometry" ],
     [ "Rectangle", "classdao_1_1Rectangle.html", "classdao_1_1Rectangle" ],
     [ "Drawable", "classdao_1_1Drawable.html", "classdao_1_1Drawable" ],
     [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ],
@@ -25,8 +26,12 @@ var namespacedao =
     [ "uint64", "namespacedao.html#a2a8f1a95f540566ae8b57f8313f932d1", null ],
     [ "uint8", "namespacedao.html#a0f690fdeb5ea84b98558fec2f5ac6bc0", null ],
     [ "getAtlasRegion", "namespacedao.html#a12373994fd1651320a5895a7299d1dd9", null ],
+    [ "hexByteToU8", "namespacedao.html#a3decb5fab6d89a778cfca92971d8f8e7", null ],
+    [ "hexToRGB", "namespacedao.html#a9a5ef9d9569f5c1bb2bc496244b5c74f", null ],
     [ "makeManage", "namespacedao.html#ac45f69004e30262d01cf3851e336eef6", null ],
     [ "makeObserver", "namespacedao.html#afeed7b027b4850f4e688ae60c50e7807", null ],
+    [ "makeVertices", "namespacedao.html#a72edcc6fbb3034d72283f64a9df0288b", null ],
     [ "sort", "namespacedao.html#a02af220658c49a0b7ac198977f450e7f", null ],
-    [ "regions", "namespacedao.html#a2677ebbcecac58d76c5aec8c29a0a65e", null ]
+    [ "regions", "namespacedao.html#a2677ebbcecac58d76c5aec8c29a0a65e", null ],
+    [ "rgbNorm", "namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0", null ]
 ];

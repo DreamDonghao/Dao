@@ -4,6 +4,7 @@ var searchData=
   ['of_20conduct_1',['8. Code of Conduct',['../join.html#autotoc_md16',1,'']]],
   ['of_20daoui_2',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot;&gt;Participate in the opening of DaoUI&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
   ['opening_20of_20daoui_3',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot;&gt;Participate in the opening of DaoUI&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
-  ['operator_28_29_4',['operator()',['../classdao_1_1SwitchDeleter.html#aa99385585feabd061a0d4e52baa04571',1,'dao::SwitchDeleter']]],
-  ['own_20application_20using_20daoui_5',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]]
+  ['operator_20sdl_5fvertex_4',['operator SDL_Vertex',['../structdao_1_1GeometryVertex.html#a6a2162e2ac8f9c735ee86169a1b419d4',1,'dao::GeometryVertex']]],
+  ['operator_28_29_5',['operator()',['../classdao_1_1SwitchDeleter.html#aa99385585feabd061a0d4e52baa04571',1,'dao::SwitchDeleter']]],
+  ['own_20application_20using_20daoui_6',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]]
 ];

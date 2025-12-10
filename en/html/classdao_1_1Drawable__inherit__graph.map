@@ -1,7 +1,5 @@
 <map id="dao::Drawable" name="dao::Drawable">
-<area shape="rect" id="Node000001" title="可绘制对象接口" alt="" coords="100,5,223,91"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1Polygon.html" title=" " alt="" coords="5,149,128,294"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,104,109,150,104,147,129,102"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1Rectangle.html" title=" " alt="" coords="152,139,360,304"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,102,213,137,209,140,189,104"/>
+<area shape="rect" id="Node000001" title="可绘制对象接口" alt="" coords="5,5,128,91"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1Rectangle.html" title="矩形" alt="" coords="5,139,128,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,104,69,138,64,138,64,104"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_28_29_0',['operator()',['../classdao_1_1SwitchDeleter.html#aa99385585feabd061a0d4e52baa04571',1,'dao::SwitchDeleter']]]
+  ['normalize_0',['normalize',['../classdao_1_1BoundingBox.html#ae6d7ef9eadc2c39d706136376acd0903',1,'dao::BoundingBox']]]
 ];

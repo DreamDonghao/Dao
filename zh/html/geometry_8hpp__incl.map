@@ -1,0 +1,11 @@
+<map id="code/include/component/geometry.hpp" name="code/include/component/geometry.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="131,5,312,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,61,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,48,75,90,73,85,175,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="85,93,229,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,47,178,84,174,81,204,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="253,93,320,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="239,44,270,81,266,84,235,47"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="344,93,456,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="265,43,362,85,360,90,263,48"/>
+</map>

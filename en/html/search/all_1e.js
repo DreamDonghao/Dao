@@ -4,6 +4,5 @@ var searchData=
   ['_7eboundingbox_1',['~BoundingBox',['../classdao_1_1BoundingBox.html#a6e4b9d36fbc8fbe09805dc48b68e99fa',1,'dao::BoundingBox']]],
   ['_7edrawable_2',['~Drawable',['../classdao_1_1Drawable.html#acd199ae1f40ae641c4d79236c735b018',1,'dao::Drawable']]],
   ['_7epage_3',['~Page',['../classdao_1_1Page.html#aa593d76b639520c4ea0287951c0cba92',1,'dao::Page']]],
-  ['_7epolygon_4',['~Polygon',['../classdao_1_1Polygon.html#a46ea30458fabfeb8709fd7237a90dd39',1,'dao::Polygon']]],
-  ['_7ewindow_5',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
+  ['_7ewindow_4',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
 ];

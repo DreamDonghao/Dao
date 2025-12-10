@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['a_20feature_20branch_0',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
-  ['a_20pull_20request_1',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]],
-  ['addpage_2',['addPage',['../classdao_1_1Window.html#ae9e681770ba3c48049ae44bdbc306559',1,'dao::Window']]],
-  ['addtobatch_3',['addToBatch',['../classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd',1,'dao::VertexBatchBuilder::addToBatch(const AtlasTexture &amp;texture)'],['../classdao_1_1VertexBatchBuilder.html#ad06758f1b7bb8b5dc26866d7e8838af3',1,'dao::VertexBatchBuilder::addToBatch(std::span&lt; SDL_Vertex &gt; v)']]],
-  ['addvertex_4',['addVertex',['../classdao_1_1Polygon.html#a6dac41bf6b2749e9fc6a89463d8c62ce',1,'dao::Polygon']]],
+  ['a_0',['a',['../structdao_1_1ColorRGBA.html#af7ec3f20f1509f8d41df038fb534f138',1,'dao::ColorRGBA']]],
+  ['a_20feature_20branch_1',['3. Create a Feature Branch',['../join.html#autotoc_md6',1,'']]],
+  ['a_20pull_20request_2',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]],
+  ['addpage_3',['addPage',['../classdao_1_1Window.html#ae9e681770ba3c48049ae44bdbc306559',1,'dao::Window']]],
+  ['addtobatch_4',['addToBatch',['../classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd',1,'dao::VertexBatchBuilder::addToBatch(const AtlasTexture &amp;texture)'],['../classdao_1_1VertexBatchBuilder.html#ac647e256413b0394ecc2944ca4e87df3',1,'dao::VertexBatchBuilder::addToBatch(const std::span&lt; const SDL_Vertex &gt; v, std::span&lt; const int32 &gt; indices)']]],
   ['and_20commit_5',['4. Write Code and Commit',['../join.html#autotoc_md8',1,'']]],
   ['and_20revision_6',['6. Review and Revision',['../join.html#autotoc_md12',1,'']]],
   ['app_7',['App',['../classdao_1_1App.html',1,'dao']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['switchdeleter_0',['SwitchDeleter',['../classdao_1_1SwitchDeleter.html',1,'dao']]]
+  ['page_0',['Page',['../classdao_1_1Page.html',1,'dao']]]
 ];

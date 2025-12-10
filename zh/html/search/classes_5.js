@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rectangle_0',['Rectangle',['../classdao_1_1Rectangle.html',1,'dao']]]
+  ['mappedregion_0',['MappedRegion',['../classdao_1_1MappedRegion.html',1,'dao']]]
 ];

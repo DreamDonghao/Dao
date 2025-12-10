@@ -114,8 +114,8 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:ac1e68804164326316f2c09ce447e090d"><td class="mdescLeft">&#160;</td><td class="mdescRight">禁用复制构造函数  <br /></td></tr>
 <tr class="memitem:a99adaeef22bb76ac12c2f8914aea32cd" id="r_a99adaeef22bb76ac12c2f8914aea32cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99adaeef22bb76ac12c2f8914aea32cd">addToBatch</a> (const <a class="el" href="classdao_1_1AtlasTexture.html">AtlasTexture</a> &amp;texture)</td></tr>
 <tr class="memdesc:a99adaeef22bb76ac12c2f8914aea32cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加绘制元素到批处理  <br /></td></tr>
-<tr class="memitem:ad06758f1b7bb8b5dc26866d7e8838af3" id="r_ad06758f1b7bb8b5dc26866d7e8838af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad06758f1b7bb8b5dc26866d7e8838af3">addToBatch</a> (std::span&lt; SDL_Vertex &gt; v)</td></tr>
-<tr class="memdesc:ad06758f1b7bb8b5dc26866d7e8838af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加绘制元素到批处理  <br /></td></tr>
+<tr class="memitem:ac647e256413b0394ecc2944ca4e87df3" id="r_ac647e256413b0394ecc2944ca4e87df3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac647e256413b0394ecc2944ca4e87df3">addToBatch</a> (const std::span&lt; const SDL_Vertex &gt; v, std::span&lt; const <a class="el" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> &gt; indices)</td></tr>
+<tr class="memdesc:ac647e256413b0394ecc2944ca4e87df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加绘制元素到批处理  <br /></td></tr>
 <tr class="memitem:a4cdf7b1d496d486033ead6ac2f418f54" id="r_a4cdf7b1d496d486033ead6ac2f418f54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cdf7b1d496d486033ead6ac2f418f54">clearDrawBatches</a> ()</td></tr>
 <tr class="memdesc:a4cdf7b1d496d486033ead6ac2f418f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">清理要绘制的纹理图集  <br /></td></tr>
 <tr class="memitem:a492ba0fab47dcd02c67fbdcf0803a63f" id="r_a492ba0fab47dcd02c67fbdcf0803a63f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structdao_1_1AtlasDrawBatch.html">AtlasDrawBatch</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a492ba0fab47dcd02c67fbdcf0803a63f">getDrawBatches</a> () const</td></tr>
@@ -223,7 +223,7 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   57</span>    }</div>
 <div class="ttc" id="anamespacedao_html_a12373994fd1651320a5895a7299d1dd9"><div class="ttname"><a href="namespacedao.html#a12373994fd1651320a5895a7299d1dd9">dao::getAtlasRegion</a></div><div class="ttdeci">const AtlasRegion &amp; getAtlasRegion(const uint32 textureId)</div><div class="ttdoc">通过纹理名称枚举获取图集区域数据</div><div class="ttdef"><b>定义</b> <a href="atlas__region_8hpp_source.html#l00018">atlas_region.hpp:18</a></div></div>
 <div class="ttc" id="anamespacedao_html_aac1fa5be1e638eccd2f2ea6d6101f5dd"><div class="ttname"><a href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">dao::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00018">better_stl.hpp:18</a></div></div>
-<div class="ttc" id="anamespacedao_html_afeed7b027b4850f4e688ae60c50e7807"><div class="ttname"><a href="namespacedao.html#afeed7b027b4850f4e688ae60c50e7807">dao::makeObserver</a></div><div class="ttdeci">auto makeObserver(T *ptr)</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00052">better_stl.hpp:52</a></div></div>
+<div class="ttc" id="anamespacedao_html_afeed7b027b4850f4e688ae60c50e7807"><div class="ttname"><a href="namespacedao.html#afeed7b027b4850f4e688ae60c50e7807">dao::makeObserver</a></div><div class="ttdeci">auto makeObserver(T *ptr)</div><div class="ttdoc">观察者构建器</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00055">better_stl.hpp:55</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -239,8 +239,8 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="ad06758f1b7bb8b5dc26866d7e8838af3" name="ad06758f1b7bb8b5dc26866d7e8838af3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad06758f1b7bb8b5dc26866d7e8838af3">&#9670;&#160;</a></span>addToBatch() <span class="overload">[2/2]</span></h2>
+<a id="ac647e256413b0394ecc2944ca4e87df3" name="ac647e256413b0394ecc2944ca4e87df3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac647e256413b0394ecc2944ca4e87df3">&#9670;&#160;</a></span>addToBatch() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,8 +248,12 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::VertexBatchBuilder::addToBatch </td>
           <td>(</td>
-          <td class="paramtype">std::span&lt; SDL_Vertex &gt;</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td class="paramtype">const std::span&lt; const SDL_Vertex &gt;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>indices</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -257,13 +261,19 @@ Public 成员函数</h2></td></tr>
 <p>添加绘制元素到批处理 </p>
 
 <p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00059">59</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>                                                             {</div>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                                                                                                             {</div>
 <div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {</div>
 <div class="line"><span class="lineno">   61</span>            m_drawBatches.emplace_back(0, std::vector&lt;SDL_Vertex&gt;(), <a class="code hl_function" href="namespacedao.html#ac45f69004e30262d01cf3851e336eef6">makeManage</a>(<span class="keyword">new</span> std::vector&lt;int32&gt;()));</div>
 <div class="line"><span class="lineno">   62</span>        }</div>
-<div class="line"><span class="lineno">   63</span>        m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());</div>
-<div class="line"><span class="lineno">   64</span>    }</div>
-<div class="ttc" id="anamespacedao_html_ac45f69004e30262d01cf3851e336eef6"><div class="ttname"><a href="namespacedao.html#ac45f69004e30262d01cf3851e336eef6">dao::makeManage</a></div><div class="ttdeci">auto makeManage(T *ptr)</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00059">better_stl.hpp:59</a></div></div>
+<div class="line"><span class="lineno">   63</span>        <span class="keyword">const</span> <span class="keyword">auto</span> offset = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a><span class="keyword">&gt;</span>(m_drawBatches.back().vertices.size());</div>
+<div class="line"><span class="lineno">   64</span>        m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keyword">auto</span>&amp; current_indices = *m_drawBatches.back().indices;</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> index : indices) {</div>
+<div class="line"><span class="lineno">   67</span>            current_indices.push_back(index + offset);</div>
+<div class="line"><span class="lineno">   68</span>        }</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="ttc" id="anamespacedao_html_a31fa607e3f3e8f5b16c91804ed2a8069"><div class="ttname"><a href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">dao::int32</a></div><div class="ttdeci">int32_t int32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00014">better_stl.hpp:14</a></div></div>
+<div class="ttc" id="anamespacedao_html_ac45f69004e30262d01cf3851e336eef6"><div class="ttname"><a href="namespacedao.html#ac45f69004e30262d01cf3851e336eef6">dao::makeManage</a></div><div class="ttdeci">auto makeManage(T *ptr)</div><div class="ttdoc">管理者构建器</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00063">better_stl.hpp:63</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
