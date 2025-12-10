@@ -7,7 +7,7 @@
 #include <algorithm>
 #include <memory>
 #include <unordered_map>
-
+#include <vector>
 namespace dao {
     using int8 = int8_t;
     using int16 = int16_t;
@@ -28,6 +28,8 @@ namespace dao {
     }
 
     template<typename T>
+    /// @brief 可控删除器
+    /// @details 可以为std::unique_ptr 提供一个删除器，使其可以有观察者与管理者两种状态
     class SwitchDeleter {
     public:
         enum Mode { Observe, Manage };
@@ -48,6 +50,7 @@ namespace dao {
         Mode mode;
     };
 
+    /// @brief 观察者构建器
     template<typename T>
     auto makeObserver(T *ptr) {
         return std::unique_ptr<T, SwitchDeleter<T> >(
@@ -55,6 +58,7 @@ namespace dao {
         );
     }
 
+    /// @brief 管理者构建器
     template<typename T>
     auto makeManage(T *ptr) {
         return std::unique_ptr<T, SwitchDeleter<T> >(

@@ -8,7 +8,7 @@
 
 你可以点击这个连接了解如何使用 DaoUI 以及参与到 DaoUI 的开发中
 
-[https://dreamdonghao.github.io/DaoUI/zh/](https://dreamdonghao.github.io/DaoUI/zh/)
+[https://dreamdonghao.github.io/DaoUI/zh/html](https://dreamdonghao.github.io/DaoUI/zh/html)
 
 ## 介绍
 

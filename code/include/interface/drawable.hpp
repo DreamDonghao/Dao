@@ -11,6 +11,7 @@ namespace dao {
     public:
         virtual ~Drawable() = default;
 
+        /// @brief 写入批处理
         virtual void writeToBatch(VertexBatchBuilder &builder) const = 0;
     };
 }

@@ -9,7 +9,7 @@
 #include <memory>
 #include <utility>
 #include <vector>
-
+#include <span>
 namespace dao {
     /// @brief 纹理图集绘制批
     /// @details 一次纹理图集绘制用到的数据
@@ -20,7 +20,7 @@ namespace dao {
         }
 
         uint32 atlasId;                   ///< 绘制的纹理图集 ID
-        std::vector<SDL_Vertex> vertices; ///< 绘制纹理图集的顶点数组
+        std::vector<SDL_Vertex>     vertices; ///< 绘制纹理图集的顶点数组
         std::unique_ptr<std::vector<int32>, SwitchDeleter<std::vector<int32> > > indices;
     };
 
@@ -50,7 +50,7 @@ namespace dao {
         void addToBatch(const AtlasTexture &texture);
 
         /// @brief 添加绘制元素到批处理
-        void addToBatch(std::span<SDL_Vertex> v);
+        void addToBatch(const std::span<const SDL_Vertex> v,std::span<const int32> indices);
 
         /// @brief 清理要绘制的纹理图集
         /// @details 一般要每帧调用，否则会堆积上一帧的内容

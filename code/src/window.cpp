@@ -62,7 +62,6 @@ namespace dao {
     void Window::render() {
         for (const auto &[atlasId, vertices, indices]:
              m_pages[m_nowPageTitle]->getDrawBatches()) {
-            //std::cout << vertices.size()/4<< std::endl;
             SDL_RenderGeometry(
                 m_renderer,
                 m_atlasTextures[atlasId],

@@ -3,7 +3,6 @@
 //
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
-#include <expected>
 #include <string>
 #include <SDL3/SDL.h>
 #include <interface/page.hpp>
@@ -13,7 +12,6 @@ namespace dao {
     /// @brief 窗口
     class Window {
     public:
-        static std::expected<std::unique_ptr<Window>, std::string> create(int width, int height);
 
         Window(int width, int height);
 

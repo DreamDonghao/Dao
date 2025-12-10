@@ -8,7 +8,7 @@ This is a cross platform C++GUI program development framework that can be used t
 
 You can click on this link to learn how to use DaoUI and participate in its development
 
-[ https://dreamdonghao.github.io/DaoUI/en/]( https://dreamdonghao.github.io/DaoUI/en/ )
+[ https://dreamdonghao.github.io/DaoUI/en/html]( https://dreamdonghao.github.io/DaoUI/en/html)
 
 ## Introduction
 

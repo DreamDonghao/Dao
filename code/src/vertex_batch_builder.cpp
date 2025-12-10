@@ -56,11 +56,16 @@ namespace dao {
         );
     }
 
-    void VertexBatchBuilder::addToBatch(std::span<SDL_Vertex> v) {
+    void VertexBatchBuilder::addToBatch(const std::span<const SDL_Vertex> v, const std::span<const int32> indices) {
         if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
             m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<int32>()));
         }
+        const auto offset = static_cast<int32>(m_drawBatches.back().vertices.size());
         m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());
+        auto& current_indices = *m_drawBatches.back().indices;
+        for (const int32 index : indices) {
+            current_indices.push_back(index + offset);
+        }
     }
 
     void VertexBatchBuilder::appendQuadVertices(std::vector<SDL_Vertex> &vertices, const BoundingBox pos,
