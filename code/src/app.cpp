@@ -11,13 +11,26 @@ namespace dao {
             m_runWindowNum = 0;
             for (const auto &window: m_windows | std::views::values) {
                 render();
+                window->update();
                 m_runWindowNum += window->isRunning();
+
             }
             SDL_Event event;
             while (SDL_PollEvent(&event)) {
-                for (const auto &window: m_windows | std::views::values) {
-                    window->run(event);
+                if (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {
+                    uint32 wid = event.window.windowID;
+
+                    if (auto it = m_windows.find(wid); it != m_windows.end()) {
+                        it->second->requestClose();  // 让窗口自己决定怎么关
+                    }
                 }
+                SDL_Window *focus = SDL_GetMouseFocus(); // 更常用
+                if (!focus) {
+                    continue;
+                }
+
+                auto wid = SDL_GetWindowID(focus);
+                m_windows[wid]->handleMessage(event);
             }
         }
         SDL_Quit();

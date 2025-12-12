@@ -22,10 +22,11 @@ void TestPage::update() {
     rectangle2.writeToBatch(m_atlasVertexBatchBuilder);
 
     rectangle3.writeToBatch(m_atlasVertexBatchBuilder);
+    buttonStyle.writeToBatch(m_atlasVertexBatchBuilder);
+}
 
-    for (int i = 0; i < 10000; ++i) {
-        rectangle.writeToBatch(m_atlasVertexBatchBuilder);
-    }
+void TestPage::handleMessage(const SDL_Event &event) {
+    button.update(event);
 }
 
 const std::vector<dao::AtlasDrawBatch> &TestPage::getDrawBatches() const {

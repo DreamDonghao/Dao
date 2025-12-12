@@ -12,7 +12,6 @@ namespace dao {
     /// @brief 窗口
     class Window {
     public:
-
         Window(int width, int height);
 
         ~Window();
@@ -27,10 +26,16 @@ namespace dao {
         /// @brief 获取 id
         [[nodiscard]] uint32 getId() const { return m_id; }
 
-        /// 更新一帧
-        void run(const SDL_Event &event);
+        /// @brief 更新一帧
+        void update();
 
-        /// 判断是否在运行
+        /// @brief 处理消息
+        void handleMessage(const SDL_Event &event);
+
+        /// @brief 窗口关闭请求
+        void requestClose();
+
+        /// @brief 判断是否在运行
         [[nodiscard]] bool isRunning() const { return m_running; }
 
         /// @brief 渲染

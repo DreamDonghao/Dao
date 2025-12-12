@@ -36,7 +36,7 @@ namespace dao {
         return value;
     }
     /// @brief 将 hex 颜色格式转换为 RGBA 格式
-    constexpr ColorRGBA hexToRGB(std::string_view hex) {
+    constexpr ColorRGBA hexToRGBA(std::string_view hex) {
         if (!hex.empty() && hex[0] == '#')
             hex.remove_prefix(1);
         const auto len = hex.size();

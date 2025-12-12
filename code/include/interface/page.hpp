@@ -17,6 +17,9 @@ namespace dao {
         /// @brief 更新
         virtual void update() = 0;
 
+        /// @brief 处理消息
+        virtual void handleMessage(const SDL_Event &event) = 0;
+
         [[nodiscard]] virtual const std::vector<AtlasDrawBatch> &getDrawBatches() const = 0;
 
         [[nodiscard]] virtual const std::string &getTitle() const = 0;

@@ -52,14 +52,20 @@ namespace dao {
         }
     }
 
-    void Window::run(const SDL_Event &event) {
+    void Window::update() {
         m_pages[m_nowPageTitle]->update();
-        if (event.type == SDL_EVENT_QUIT) {
-            m_running = false;
-        }
+    }
+
+    void Window::handleMessage(const SDL_Event &event) {
+        m_pages[m_nowPageTitle]->handleMessage(event);
+    }
+
+    void Window::requestClose() {
+        m_running = false;
     }
 
     void Window::render() {
+        SDL_RenderClear(m_renderer);
         for (const auto &[atlasId, vertices, indices]:
              m_pages[m_nowPageTitle]->getDrawBatches()) {
             SDL_RenderGeometry(

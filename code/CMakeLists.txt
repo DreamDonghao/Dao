@@ -19,8 +19,9 @@ add_library(dao
 
 find_package(SDL3 CONFIG REQUIRED)
 find_package(SDL3_image CONFIG REQUIRED)
+find_package(SDL3_ttf CONFIG REQUIRED)
 
-target_link_libraries(dao PRIVATE SDL3::SDL3 PRIVATE SDL3_image::SDL3_image)
+target_link_libraries(dao PRIVATE SDL3::SDL3 PRIVATE SDL3_image::SDL3_image PRIVATE SDL3_ttf::SDL3_ttf)
 
 
 if (MSVC)
