@@ -6,7 +6,6 @@
 #include <string>
 #include <SDL3/SDL.h>
 #include <interface/page.hpp>
-#include <memory>
 
 namespace dao {
     /// @brief 窗口
@@ -18,13 +17,15 @@ namespace dao {
         };
 
     public:
+        /// @param width 窗口宽度
+        /// @param height 窗口高度
         Window(int width, int height);
 
         ~Window();
 
         /// @brief 添加页面
         /// @param page 要添加页面的unique_ptr指针
-        void addPage(std::unique_ptr<Page> page);
+        Window &addPage(std::unique_ptr<Page> page);
 
         /// @brief 加载纹理图集
         void registerTexture(const uint32 &textureId);
@@ -55,6 +56,8 @@ namespace dao {
         hash_map<uint32, SDL_Texture *> m_atlasTextures;
         std::string m_nowPageTitle;
         hash_map<std::string, std::unique_ptr<Page> > m_pages;
+
+        void switchPage(std::string title);
     };
 }
 #endif //WINDOW_HPP

@@ -1,1 +1,1 @@
-constexpr uint32_t food_apple = 2;constexpr uint32_t food_banana = 3;
+constexpr uint32_t little_game_begin_game = 2;constexpr uint32_t little_game_leaderboard = 3;constexpr uint32_t little_game_quit = 4;constexpr uint32_t little_game_register = 5;constexpr uint32_t food_apple = 6;constexpr uint32_t food_banana = 7;

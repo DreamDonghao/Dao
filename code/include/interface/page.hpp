@@ -4,6 +4,7 @@
 #ifndef PAGE_HPP
 #define PAGE_HPP
 #include <core/frame/vertex_batch_builder.hpp>
+#include <core/frame/window_event.hpp>
 
 namespace dao {
     /// @brief 页面接口
@@ -12,7 +13,12 @@ namespace dao {
     public:
         virtual ~Page() = default;
 
-        [[nodiscard]] virtual std::vector<uint32> registerTexture() const = 0;
+        virtual void init() = 0;
+
+        virtual void close() = 0;
+
+        /// @brief 获取加载图集
+        [[nodiscard]] virtual std::vector<uint32> getRegisterTexture() const = 0;
 
         /// @brief 更新
         virtual void update() = 0;
@@ -23,6 +29,8 @@ namespace dao {
         [[nodiscard]] virtual const std::vector<AtlasDrawBatch> &getDrawBatches() const = 0;
 
         virtual GlyphAtlas &getGlyphAtlas() = 0;
+
+        virtual PageCmdQueue &getEvent() = 0;
 
         [[nodiscard]] virtual const std::string &getTitle() const = 0;
     };

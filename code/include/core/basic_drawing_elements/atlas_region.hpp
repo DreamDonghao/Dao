@@ -13,7 +13,6 @@ namespace dao {
 
     extern const AtlasRegion regions[];
 
-
     /// @brief 通过纹理名称枚举获取图集区域数据
     inline const AtlasRegion &getAtlasRegion(const uint32 textureId) {
         return regions[textureId];

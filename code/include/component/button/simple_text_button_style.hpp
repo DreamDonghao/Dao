@@ -8,15 +8,34 @@
 namespace dao {
     class SimpleTextButtonStyle : public ButtonStyle {
     public:
+        SimpleTextButtonStyle()
+            : SimpleTextButtonStyle(0, 0, 0, 0, U"", 0, ColorRGBA{}, nullptr) {
+        }
+
         SimpleTextButtonStyle(const float32 x, const float32 y, const float32 w, const float32 h,
-                              const std::u32string &text, const float32 textSize, const ColorRGBA textColor,Button *button)
+                              const std::u32string &text, const float32 textSize, const ColorRGBA textColor,
+                              Button *button)
             : m_text(x, y, text, textSize, textColor), m_button(button) {
         }
 
+        SimpleTextButtonStyle(const SimpleTextButtonStyle &other) noexcept {
+            m_text = other.m_text;
+            m_button = other.m_button;
+        }
+
+        SimpleTextButtonStyle(SimpleTextButtonStyle &&other) noexcept {
+            m_text = std::move(other.m_text);
+            m_button = other.m_button;
+        }
+
         void writeToBatch(VertexBatchBuilder &builder) const override {
-            if (m_button->getStatus() != ButtonStatus::Pressed) {
+            if (m_button->isEnable()) {
                 builder.addToBatch(m_text);
             }
+        }
+
+        void setText(const std::u32string &text) {
+            m_text.setContent(text);
         }
 
         void bindButton(Button *button) override {

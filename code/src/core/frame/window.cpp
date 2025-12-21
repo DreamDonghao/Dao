@@ -1,11 +1,13 @@
 //
 // Created by donghao on 25-12-6.
 //
-#include <chrono>
-#include <../include/core/frame/window.hpp>
+#include <core/frame/window.hpp>
+#include <core/frame/window_event.hpp>
+#include <core/basic_drawing_elements/atlas_region.hpp>
 #include <SDL3_image/SDL_image.h>
-#include "../include/core/basic_drawing_elements/atlas_region.hpp"
 #include <print>
+#include <utility>
+#include <chrono>
 
 namespace dao {
     Window::Window(const int width, const int height) {
@@ -28,14 +30,18 @@ namespace dao {
         SDL_Quit();
     }
 
-    void Window::addPage(std::unique_ptr<Page> page) {
-        m_nowPageTitle = page->getTitle();
-        for (auto textureId: page->registerTexture()) {
+    Window &Window::addPage(std::unique_ptr<Page> page) {
+        const std::string title = page->getTitle();
+        for (auto textureId: page->getRegisterTexture()) {
             registerTexture(textureId);
         }
-        m_pages[page->getTitle()] = std::move(page);
+        if (m_pages.empty()) {
+            m_nowPageTitle = title;
+        }
+        m_pages[title] = std::move(page);
         m_atlasTextures[1] = SDL_CreateTextureFromSurface(
-            m_renderer, &m_pages[m_nowPageTitle]->getGlyphAtlas().getAtlasSurface());
+            m_renderer, &m_pages[title]->getGlyphAtlas().getAtlasSurface());
+        return *this;
     }
 
     void Window::registerTexture(const uint32 &textureId) {
@@ -50,6 +56,7 @@ namespace dao {
     }
 
     void Window::update() {
+        m_pages[m_nowPageTitle]->update();
         if (m_pages[m_nowPageTitle]->getGlyphAtlas().isUpdated()) {
             SDL_UpdateTexture(
                 m_atlasTextures[1], nullptr,
@@ -59,7 +66,16 @@ namespace dao {
             SDL_SetTextureScaleMode(m_atlasTextures[1], SDL_SCALEMODE_NEAREST);
             m_pages[m_nowPageTitle]->getGlyphAtlas().clearUpdateFlag();
         }
-        m_pages[m_nowPageTitle]->update();
+
+        if (m_pages[m_nowPageTitle]->getEvent().isPresenceMessage()) {
+            switch (const auto event = m_pages[m_nowPageTitle]->getEvent().popEvent(); event.type) {
+                case PageCmdType::switchPage:
+                    switchPage(std::any_cast<std::string>(event.data));
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     void Window::handleMessage(const SDL_Event &event) {
@@ -72,15 +88,24 @@ namespace dao {
 
     void Window::render() {
         SDL_RenderClear(m_renderer);
-        for (const auto &[atlasId, vertices, indices]:
+        for (const auto &[atlasId, vertices, indices,indicesCount]:
              m_pages[m_nowPageTitle]->getDrawBatches()) {
             SDL_RenderGeometry(
                 m_renderer, m_atlasTextures[atlasId],
                 vertices.data(), static_cast<int>(vertices.size()),
-                indices->data(), static_cast<int>(vertices.size() / 4 * 6)
+                indices->data(), indicesCount
             );
         }
 
         SDL_RenderPresent(m_renderer);
+    }
+
+    void Window::switchPage(std::string title) {
+        m_pages[m_nowPageTitle]->close();
+        m_nowPageTitle = std::move(title);
+        m_pages[m_nowPageTitle]->init();
+        m_atlasTextures[1] = SDL_CreateTextureFromSurface(
+            m_renderer, &m_pages[m_nowPageTitle]->getGlyphAtlas().getAtlasSurface()
+        );
     }
 }

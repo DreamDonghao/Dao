@@ -23,12 +23,18 @@ namespace dao {
     public:
         GlyphAtlas() = default;
 
+        /// @param ttfPath 字体文件
+        /// @param glyphSize 字号大小
+        /// @param atlasSize 字形图集大小
         GlyphAtlas(const std::string_view &ttfPath, const float32 glyphSize, const int32 atlasSize)
             : m_atlasSize(atlasSize), m_font(TTF_OpenFont(ttfPath.data(), glyphSize)),
               m_atlasSurface(SDL_CreateSurface(atlasSize, atlasSize, SDL_PIXELFORMAT_RGBA32)) {
             SDL_FillSurfaceRect(
                 m_atlasSurface, nullptr,
-                SDL_MapRGBA(SDL_GetPixelFormatDetails(m_atlasSurface->format), nullptr, 0, 0, 0, 0)
+                SDL_MapRGBA(
+                    SDL_GetPixelFormatDetails(m_atlasSurface->format),
+                    nullptr, 0, 0, 0, 0
+                )
             );
         }
 
@@ -83,12 +89,15 @@ namespace dao {
             };
         }
 
+        /// @brief 获取字形图集
         [[nodiscard]] SDL_Surface &getAtlasSurface() const {
             return *m_atlasSurface;
         }
 
+        /// @brief 清除添加字形标记
         void clearUpdateFlag() { m_isUpdated = false; }
 
+        /// @brief 获取是否有新的字形添加
         [[nodiscard]] bool isUpdated() const { return m_isUpdated; }
 
     private:
@@ -96,7 +105,7 @@ namespace dao {
             int32 x, y, rowHeight;
         };
 
-        hash_map<char32_t, Glyph> m_glyphs{};
+        hash_map<char32_t, Glyph> m_glyphs{}; ///< 字符在图集中的位置
         int32 m_atlasSize{0};
         TTF_Font *m_font{nullptr};
         SDL_Surface *m_atlasSurface{nullptr};

@@ -8,6 +8,7 @@
 #include <iostream>
 #include <memory>
 #include <unordered_map>
+#include <utf8cpp/utf8/checked.h>
 
 namespace dao {
     using int8 = int8_t;
@@ -34,7 +35,16 @@ namespace dao {
         }
     }
 
-
+    inline void pop_utf8(std::string &input) {
+        std::u32string u32;
+        utf8::utf8to32(input.begin(), input.end(), std::back_inserter(u32));
+        if (!u32.empty()) {
+            u32.pop_back();
+        }
+        std::string out;
+        utf8::utf32to8(u32.begin(), u32.end(), std::back_inserter(out));
+        input = std::move(out);
+    }
 
     /// @brief 结果为浮点数的除法
     template<typename T>

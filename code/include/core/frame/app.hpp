@@ -10,7 +10,10 @@ namespace dao {
     /// @details 用来管理整个应用程序
     class App final {
     public:
-        ~App() = default;
+        ~App() {
+            TTF_Quit();
+            SDL_Quit();
+        }
 
         /// @brief 创建应用
         /// @en

@@ -1,18 +1,50 @@
 {
-  "food_apple": {
-    "atlas_file": "atlas_0000.png",
-    "atlas_id": 0,
+  "little_game_begin_game": {
+    "atlas_file": "atlas_0002.png",
+    "atlas_id": 2,
     "left": 0,
     "top": 0,
-    "right": 32,
+    "right": 500,
+    "bottom": 200
+  },
+  "little_game_leaderboard": {
+    "atlas_file": "atlas_0002.png",
+    "atlas_id": 2,
+    "left": 502,
+    "top": 0,
+    "right": 1002,
+    "bottom": 200
+  },
+  "little_game_quit": {
+    "atlas_file": "atlas_0002.png",
+    "atlas_id": 2,
+    "left": 1004,
+    "top": 0,
+    "right": 1504,
+    "bottom": 200
+  },
+  "little_game_register": {
+    "atlas_file": "atlas_0002.png",
+    "atlas_id": 2,
+    "left": 1506,
+    "top": 0,
+    "right": 2006,
+    "bottom": 200
+  },
+  "food_apple": {
+    "atlas_file": "atlas_0002.png",
+    "atlas_id": 2,
+    "left": 2008,
+    "top": 0,
+    "right": 2040,
     "bottom": 32
   },
   "food_banana": {
-    "atlas_file": "atlas_0000.png",
-    "atlas_id": 0,
-    "left": 34,
-    "top": 0,
-    "right": 66,
-    "bottom": 32
+    "atlas_file": "atlas_0002.png",
+    "atlas_id": 2,
+    "left": 0,
+    "top": 202,
+    "right": 32,
+    "bottom": 234
   }
 }

@@ -3,7 +3,7 @@
 //
 #include <span>
 #include <../include/core/frame/vertex_batch_builder.hpp>
-#include "../include/core/basic_drawing_elements/atlas_region.hpp"
+#include "../../../include/core/basic_drawing_elements/atlas_region.hpp"
 #include <print>
 
 namespace dao {
@@ -58,6 +58,7 @@ namespace dao {
             ) {
             m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>(), makeObserver(&s_qudaIndices));
         }
+        m_drawBatches.back().indicesCount += 6;
         appendQuadVertices(
             m_drawBatches.back().vertices,
             texture.getBoundingBox(), texture.getName()
@@ -68,6 +69,7 @@ namespace dao {
         if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
             m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<int32>()));
         }
+        m_drawBatches.back().indicesCount += static_cast<int>(indices.size());
         const auto offset = static_cast<int32>(m_drawBatches.back().vertices.size());
         m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());
         auto &current_indices = *m_drawBatches.back().indices;
@@ -80,6 +82,7 @@ namespace dao {
         if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 1) {
             m_drawBatches.emplace_back(1, std::vector<SDL_Vertex>(), makeObserver(&s_qudaIndices));
         }
+        m_drawBatches.back().indicesCount += static_cast<int>(text.getContent().size()) * 6;
         auto &vertices = m_drawBatches.back().vertices;
 
         float32 x = text.getX();

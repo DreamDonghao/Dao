@@ -14,7 +14,6 @@ namespace dao {
                 render();
                 window->update();
                 m_runWindowNum += window->isRunning();
-
             }
             SDL_Event event;
             while (SDL_PollEvent(&event)) {
@@ -22,10 +21,10 @@ namespace dao {
                     uint32 wid = event.window.windowID;
 
                     if (auto it = m_windows.find(wid); it != m_windows.end()) {
-                        it->second->requestClose();  // 让窗口自己决定怎么关
+                        it->second->requestClose();
                     }
                 }
-                SDL_Window *focus = SDL_GetMouseFocus(); // 更常用
+                SDL_Window *focus = SDL_GetMouseFocus();
                 if (!focus) {
                     continue;
                 }
@@ -48,6 +47,7 @@ namespace dao {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             std::cerr << "SDL_Init failed" << SDL_GetError() << std::endl;
         }
+        SDL_SetHint(SDL_HINT_IME_IMPLEMENTED_UI,"1");
         if (!TTF_Init()) {
             SDL_Log("1TTF_Init failed: %s", SDL_GetError());
         }

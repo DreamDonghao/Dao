@@ -11,7 +11,7 @@ namespace dao {
     /// @brief 矩形
     class Rectangle : public Drawable {
     public:
-        explicit Rectangle(const float32 x, const float32 y, const float32 w, const float32 h, const ColorRGBA color)
+        Rectangle(const float32 x, const float32 y, const float32 w, const float32 h, const ColorRGBA color)
             : m_vertices(std::array<GeometryVertex, 4>(
                 {
                     {x, y, {color}},
@@ -20,6 +20,9 @@ namespace dao {
                     {x, y + h, {color}}
                 })) {
         }
+
+        Rectangle (const BoundingBox box,const ColorRGBA color)
+        :Rectangle(box.getLeft(),box.getTop(),box.getWidth(),box.getHeight(),color){}
 
 
         void writeToBatch(VertexBatchBuilder &builder) const override {

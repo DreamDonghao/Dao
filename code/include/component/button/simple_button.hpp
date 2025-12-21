@@ -5,8 +5,6 @@
 #include <functional>
 #include <SDL3/SDL_events.h>
 #include <component/rectangle.hpp>
-#include "../core/tool/better_stl.hpp"
-#include "../core/tool/bounding_box.hpp"
 #include <interface/button.hpp>
 
 namespace dao {
@@ -14,14 +12,34 @@ namespace dao {
     public:
         ~SimpleButton() override = default;
 
+        SimpleButton(): SimpleButton(0.0f, 0.0f, 0.0f, 0.0f, []() {
+        }) {
+        }
+
         SimpleButton(const float32 x, const float32 y, const float32 width, const float32 height,
-                     const ButtonStatus buttonStatus,
-                     std::move_only_function<void()> onClick)
+                     std::move_only_function<void()> onClick,
+                     const ButtonStatus buttonStatus = dao::ButtonStatus::Normal)
             : m_boundingBox(x, y, x + width, y + height),
               m_status(buttonStatus), m_onClick(std::move(onClick)) {
         }
 
-        void update(const SDL_Event &event) override {
+        SimpleButton(const SimpleButton&) = delete;
+        SimpleButton& operator=(const SimpleButton&) = delete;
+
+        SimpleButton(SimpleButton &&other) noexcept {
+            m_boundingBox = other.m_boundingBox;
+            m_status = other.m_status;
+            m_onClick = std::move(other.m_onClick);
+        }
+
+        SimpleButton &operator=(SimpleButton &&other) noexcept {
+            m_boundingBox = other.m_boundingBox;
+            m_status = other.m_status;
+            m_onClick = std::move(other.m_onClick);
+            return *this;
+        }
+
+        void handleEvent(const SDL_Event &event) override {
             if (m_status == ButtonStatus::Disabled) {
                 return;
             }
@@ -55,9 +73,20 @@ namespace dao {
             m_status = ButtonStatus::Hover;
         }
 
+        [[nodiscard]] bool isEnable() const override {
+            return m_status != ButtonStatus::Disabled;
+        }
 
         [[nodiscard]] ButtonStatus getStatus() const override {
             return m_status;
+        }
+
+        void setStatus(const ButtonStatus status) {
+            m_status = status;
+        }
+
+        [[nodiscard]] BoundingBox getBoundingBox() const {
+            return m_boundingBox;
         }
 
     private:
@@ -65,6 +94,4 @@ namespace dao {
         ButtonStatus m_status{ButtonStatus::Disabled};
         std::move_only_function<void()> m_onClick;
     };
-
-
 }

@@ -5,7 +5,6 @@
 #define TEXTURE_BATCH_BUILDER_HPP
 #include <SDL3/SDL_render.h>
 #include <core/basic_drawing_elements/atlas_texture.hpp>
-#include <core/tool/better_stl.hpp>
 #include <utility>
 #include <vector>
 #include <span>
@@ -24,6 +23,7 @@ namespace dao {
         uint32 atlasId;                   ///< 绘制的纹理图集 ID
         std::vector<SDL_Vertex> vertices; ///< 绘制纹理图集的顶点数组
         std::unique_ptr<std::vector<int32>, SwitchDeleter<std::vector<int32> > > indices;
+        int indicesCount{0};
     };
 
     /// @brief 顶点批处理构建器

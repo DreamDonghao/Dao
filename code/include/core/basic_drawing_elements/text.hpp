@@ -21,11 +21,15 @@ namespace dao {
 
         void setY(const float32 y) { m_y = y; }
 
-        void setContent(const std::u32string &content) { m_content = content; }
+        void setContent(std::u32string content) { m_content = std::move(content); }
 
         void setFontSize(const float32 fontSize) { m_fontSize = fontSize; }
 
         void setColor(const ColorRGBA &color) { m_color = color; }
+
+        void insert(const uint64 index, const char32_t ch) {
+            m_content.insert(index, 1, ch);
+        }
 
         [[nodiscard]] float32 getX() const { return m_x; }
 

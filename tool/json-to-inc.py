@@ -8,7 +8,7 @@ def to_enum_name(s: str) -> str:
 
 # textures.inc —— 全部放一行
 with open("example/inc/textures.inc", "w", encoding="utf-8") as f:
-    texture_id = 1
+    texture_id = 2
     for key in data.keys():
         f.write(f"constexpr uint32_t {key} = {texture_id};")
         texture_id += 1

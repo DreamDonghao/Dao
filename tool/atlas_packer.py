@@ -56,7 +56,7 @@ os.makedirs(os.path.dirname(OUTPUT_BASE), exist_ok=True)
 images_to_pack.sort(key=lambda x_: x_["h"], reverse=True)
 
 # ========== 图集打包 ==========
-atlas_index = 0
+atlas_index = 2
 cur = 0
 metadata = {}
 

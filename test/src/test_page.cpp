@@ -1,10 +1,10 @@
 //
 // Created by donghao on 25-12-8.
 //
-#include "../include/test_page.hpp"
+#include "test_page.hpp"
 #include <component/rectangle.hpp>
 
-std::vector<uint32_t> TestPage::registerTexture() const {
+std::vector<uint32_t> TestPage::getRegisterTexture() const {
     std::vector registerTexture{
         texture::food_apple,
         texture::food_banana,
@@ -28,7 +28,7 @@ void TestPage::update() {
 }
 
 void TestPage::handleMessage(const SDL_Event &event) {
-    button.update(event);
+    button.handleEvent(event);
 }
 
 const std::vector<dao::AtlasDrawBatch> &TestPage::getDrawBatches() const {

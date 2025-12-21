@@ -22,7 +22,6 @@ namespace dao {
         float a;
     };
 
-
     constexpr uint8 hexByteToU8(const std::string_view sv) noexcept {
         uint8 value = 0;
         for (const char c: sv) {
@@ -34,6 +33,7 @@ namespace dao {
         }
         return value;
     }
+
     /// @brief 将 hex 颜色格式转换为 RGBA 格式
     constexpr ColorRGBA hexToRGBA(std::string_view hex) {
         if (!hex.empty() && hex[0] == '#')
